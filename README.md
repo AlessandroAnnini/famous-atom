@@ -114,6 +114,7 @@ It will be replaced by snippet for it.
 #### HTML
 
 ##### famsca
+Famo.us HTML scaffolding
 ```
 <html>
     <head>
@@ -143,6 +144,7 @@ It will be replaced by snippet for it.
 ```
 
 ##### fambox
+famousBox.js fast but unofficial and UNSUPPORTED scaffolding (use this only for test apps)
 ```
 <html>
   <head>
