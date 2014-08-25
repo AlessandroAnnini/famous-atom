@@ -1,17 +1,26 @@
 {
   "name": "famous-atom",
   "main": "./lib/famous-atom",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A short description of your package",
   "homepage": "http://famousco.de/",
-  "keywords": ["famous-atom", "famo.us", "famous", "syntax", "snippets", "atom", "famousco.de"],
+  "keywords": [
+    "famous-atom",
+    "famo.us",
+    "famous",
+    "syntax",
+    "snippets",
+    "atom",
+    "famousco.de"
+  ],
   "author": "Alessandro Filippo Annini",
-  "activationEvents": ["famous-atom:toggle"],
+  "activationEvents": [
+    "famous-atom:toggle"
+  ],
   "repository": "https://github.com/sun2rise/famous-atom",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
