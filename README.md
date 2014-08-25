@@ -1,5 +1,10 @@
 # Famo.us support in Atom
 
+**[famo.us](http://famo.us/)** - official website
+
+**[famousco.de](http://famousco.de/)** - first unofficial Famo.us resource website
+
+
 Adds syntax highlighting and snippets to Famo.us in Atom.
 
 Contributions are greatly appreciated. Please fork this repository and open a
@@ -99,10 +104,7 @@ ToggleButton
 ### Snippets
 
 You can use snippets in HTML and JavaScript.
-See [snippets](https://github.com/angular-ui/AngularJS-Atom/tree/master/snippets)
-for more details.
-
-![](https://raw.github.com/angular-ui/AngularJS-Atom/master/screenshots/snippets.gif)
+See snippets folder for more details.
 
 If you type prefix and press `tab`,
 It will be replaced by snippet for it.
@@ -159,6 +161,16 @@ It will be replaced by snippet for it.
 
 
 #### JavaScript
+A lot of snippets have this syntax:
+`fam + <v|n> + name`
+where `v` stands for 'variable'
+and `n` stands for 'new'
+`name` is the same name as Famo.us object lowcase
+
+others are like:
+`fam + name`
+
+
 
 ##### famvengine
 ```
