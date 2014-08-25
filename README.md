@@ -145,6 +145,7 @@ Famo.us HTML scaffolding
 
 ##### fambox
 famousBox.js fast but unofficial and UNSUPPORTED scaffolding (use this only for test apps)
+see http://famousco.de/how-to/ for details.
 ```
 <html>
   <head>
