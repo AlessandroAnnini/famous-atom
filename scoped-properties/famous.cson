@@ -76,4 +76,18 @@
         'NavigationBar'
         'TabBar'
         'ToggleButton'
+		
+		'click'
+		'mousedown'
+		'mousemove'
+		'mouseup'
+		'mouseover'
+		'mouseout'
+		'touchstart'
+		'touchmove'
+		'touchend'
+		'touchcancel'
+		'keydown'
+		'keyup'
+		'keypress'
     ]
