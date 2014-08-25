@@ -1,0 +1,16 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  '.overlayer':
+      'Enable famous-atom': 'famous-atom:toggle'
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'famous-atom'
+      'submenu': [
+        { 'label': 'Toggle', 'command': 'famous-atom:toggle' }
+      ]
+    ]
+  }
+]

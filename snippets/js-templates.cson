@@ -1,0 +1,265 @@
+".source.js":
+  "load Engine":
+    "prefix": "famvengine"
+    "body": "var Engine = require('famous/core/Engine');"
+  "load Surface":
+    "prefix": "famvsurface"
+    "body": "var Surface = require('famous/core/Surface');"
+  "load ImageSurface":
+    "prefix": "famvimagesurface"
+    "body": "var ImageSurface = require('famous/surfaces/ImageSurface');"
+  "load InputSurface":
+    "prefix": "famvinputsurface"
+    "body": "var InputSurface = require('famous/surfaces/InputSurface');"
+  "load StateModifier":
+    "prefix": "famvstatemodifier"
+    "body": "var StateModifier = require('famous/modifiers/StateModifier');"
+  "load Modifier":
+    "prefix": "famvmodifier"
+    "body": "var Modifier = require('famous/core/Modifier');"
+  "load RenderNode":
+    "prefix": "famvrendernode"
+    "body": "var RenderNode = require('famous/core/RenderNode');"
+  "load Transform":
+    "prefix": "famvtransform"
+    "body": "var Transform = require('famous/core/Transform');"
+  "load Transitionable":
+    "prefix": "famvtransitionable"
+    "body": "var Transitionable = require('famous/transitions/Transitionable');"
+  "load GenericSync":
+    "prefix": "famvgenericsync"
+    "body": "var GenericSync = require('famous/inputs/GenericSync');"
+  "load MouseSync":
+    "prefix": "famvmousesync"
+    "body": "var MouseSync = require('famous/inputs/MouseSync');"
+  "load TouchSync":
+    "prefix": "famvtouchsync"
+    "body": "var TouchSync = require('famous/inputs/TouchSync');"
+  "load ScrollSync":
+    "prefix": "famvscrollsync"
+    "body": "var ScrollSync = require('famous/inputs/ScrollSync');"
+  "GenericSync":
+    "prefix": "famgenericsync"
+    "body": """
+    GenericSync.register({
+        'mouse': MouseSync,
+        'touch': TouchSync,
+        'scroll': ScrollSync
+    });
+    """
+  "new Surface":
+    "prefix": "famnsurface"
+    "body": """
+        var $1 = new Surface({
+            size: [undefined, undefined],
+            content: '',
+            classes: [],
+            properties: {
+                color: 'white',
+                textAlign: 'center',
+                backgroundColor: '#FA5C4F'
+            }
+        });
+    """
+  "new ImageSurface":
+    "prefix": "famnimagesurface"
+    "body": """
+        var $1 = new ImageSurface({
+            size: [true, true],
+            content: '/*url*/'
+        });
+    """
+  "new InputSurface":
+    "prefix": "famninputsurface"
+    "body": """
+        var $1 = new InputSurface({
+            size: [200, 100],
+            placeholder: '',
+            type: 'text' // or 'button'
+        });
+    """
+  "new StateModifier":
+    "prefix": "famnstatemodifier"
+    "body": """
+        var $1 = new StateModifier({
+          align: [0, 0],
+          origin: [0, 0],
+          transform: Transform.translate(0, 0, 0)
+        });
+    """
+  "transition":
+    "prefix": "famtransition"
+    "body": "{ duration : $1, curve: Easing.linear }"
+  "header footer layout":
+    "prefix": "famnheaderfooterlayout"
+    "body": """
+        /* NEEDS EDITING */
+        var $1 = new HeaderFooterLayout({
+            headerSize: $2,
+            footerSize: $3
+        });
+
+        $1.header.add();
+        $1.content.add();
+        $1.footer.add();
+
+        //mainContext.add($1);
+    """
+  "grid layout":
+    "prefix": "famngridlayout"
+    "body": """
+        /* NEEDS EDITING */
+        var $1 = new GridLayout({
+          dimensions: [$2, $3]
+        });
+
+        var surfaces = [];
+        // surfaces.push(new Surface());
+        $1.sequenceFrom(surfaces);
+
+        //mainContext.add($1);
+    """
+  "flexible layout":
+    "prefix": "famnflexiblelayout"
+    "body": """
+        /* NEEDS EDITING */
+        var ratios = [1, 3, 5];
+        var $1 = new FlexibleLayout({
+            ratios: ratios
+        });
+
+        var surfaces = [];
+        // surfaces.push(new Surface());
+        $1.sequenceFrom(surfaces);
+
+        //mainContext.add($1);
+    """
+  "sequential layout":
+    "prefix": "famnsequentiallayout"
+    "body": """
+        /* NEEDS EDITING */
+        var $1 = new SequentialLayout({
+            direction: 0
+        });
+        var surfaces = [];
+        $1.sequenceFrom(surfaces);
+        // surfaces.push(new Surface());
+        // mainContext.add($1);
+    """
+
+  "swipe example":
+    "prefix": "famswipe"
+    "body": """
+        /* !ONLY FOR EXAMPLE PURPOSE! */
+        var GenericSync     = require('famous/inputs/GenericSync');
+        var MouseSync       = require('famous/inputs/MouseSync');
+        var TouchSync       = require('famous/inputs/TouchSync');
+        GenericSync.register({'mouse': MouseSync, 'touch': TouchSync});
+
+        var options = {
+            openPosition: -276,
+            transition: {
+                duration: 300,
+                curve: 'easeOut'
+            },
+            posThreshold: 138,
+            velThreshold: 0.50
+        };
+
+        var currentPos = new Transitionable([0, 0]);
+
+        var sync = new GenericSync(['mouse', 'touch'], {
+            direction: GenericSync.DIRECTION_X
+        });
+        surf.pipe(sync);
+
+        function _handleSwipe() {
+            sync.on('update', function (data) {
+                var currentPosition = contentPos.get();
+                contentPos.set(currentPosition + data.delta);
+            }.bind(this));
+
+            sync.on('end', (function (data) {
+                var velocity = data.velocity;
+                var position = contentPos.get();
+
+                if(contentPos.get() > this.options.posThreshold) {
+                    if(velocity < -this.options.velThreshold) {
+                        this.slideLeft();
+                    } else {
+                        this.slideRight();
+                    }
+                } else {
+                    if(velocity > this.options.velThreshold) {
+                        this.slideRight();
+                    } else {
+                        this.slideLeft();
+                    }
+                }
+            }).bind(this));
+        }
+
+        AppView.prototype.slideLeft = function() {
+            this.pageViewPos.set(0, this.options.transition, function() {
+
+            }.bind(this));
+        };
+
+        AppView.prototype.slideRight = function() {
+            this.pageViewPos.set(this.options.openPosition, this.options.transition, function() {
+
+            }.bind(this));
+        };
+    """
+  "new renderNode":
+    "prefix": "famnrendernode"
+    "body": """
+        /* NEEDS EDITING */
+        // var surf = new Surface();
+        // var mod = new StateModifier();
+
+        var $1 = new RenderNode(mod);
+        $1.add(surf);
+
+        // $1.add(mod).add(surf);
+        // mainContext.add($1);
+    """
+  "timer setInterval":
+    "prefix": "faminterval"
+    "body": """
+        Timer.setInterval(function() {
+
+        }, $1);
+    """
+  "timer setTimeout":
+    "prefix": "famtimeout"
+    "body": """
+        Timer.setTimeout(function() {
+
+        }, $1);
+    """
+  "timer every":
+    "prefix": "famevery"
+    "body": """
+        Timer.every(function() {
+
+        }, $1);
+    """
+  "timer after":
+    "prefix": "famafter"
+    "body": """
+        Timer.after(function() {
+
+        }, $1);
+    """
+  "keycodes":
+    "prefix": "famkeycodes"
+    "body": """
+        Engine.on('keypress', function(event) {
+        if (event.charCode >= KeyCodes['0'] && event.charCode <= KeyCodes['9']) {
+            console.log('you hit a number');
+        } else {
+            console.log('not a number');
+        }
+    });
+    """
