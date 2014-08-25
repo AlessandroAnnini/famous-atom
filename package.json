@@ -7,7 +7,7 @@
   "keywords": ["famous-atom", "famo.us", "famous", "syntax", "snippets", "atom", "famousco.de"],
   "author": "Alessandro Filippo Annini",
   "activationEvents": ["famous-atom:toggle"],
-  "repository": "https://github.com/atom/famous-atom",
+  "repository": "https://github.com/sun2rise/famous-atom",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
