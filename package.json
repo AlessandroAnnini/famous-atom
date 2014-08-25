@@ -1,7 +1,7 @@
 {
   "name": "famous-atom",
   "main": "./lib/famous-atom",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A short description of your package",
   "homepage": "http://famousco.de/",
   "keywords": [
