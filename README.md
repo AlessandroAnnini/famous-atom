@@ -1,27 +1,24 @@
-# Famo.us support in Atom
+Famo.us support in Atom
+=======================
 
 **[famo.us](http://famo.us/)** - official website
 
 **[famousco.de](http://famousco.de/)** - first unofficial Famo.us resource website
 
-
 Adds syntax highlighting and snippets to Famo.us in Atom.
 
 ![](https://raw.githubusercontent.com/sun2rise/famous-atom/master/screenshots/famous-atom.gif)
 
-Contributions are greatly appreciated. Please fork this repository and open a
-pull request to add snippets, make grammar tweaks, etc.
+Contributions are greatly appreciated. Please fork this repository and open a pull request to add snippets, make grammar tweaks, etc.
 
-## Supported features
+Supported features
+------------------
 
 ### Autocompletes
 
-You can use autocompletes for Famo.us's variables and function in JavaScript
-and HTML scaffolding.
-See scoped-properties folder for more details.
+You can use autocompletes for Famo.us's variables and function in JavaScript and HTML scaffolding. See scoped-properties folder for more details.
 
-If you type some prefix and press `ctrl` + `space`,
-you can use autocompletes in below.
+If you type some prefix and press `ctrl` + `space`, you can use autocompletes in below.
 
 #### JavaScript
 
@@ -150,196 +147,200 @@ inOutBounce
 
 ### Snippets
 
-You can use snippets in HTML and JavaScript.
-See snippets folder for more details.
+You can use snippets in HTML and JavaScript. See snippets folder for more details.
 
-If you type prefix and press `tab`,
-It will be replaced by snippet for it.
+If you type prefix and press `tab`, It will be replaced by snippet for it.
 
 #### HTML
 
 ##### famsca
-Famo.us HTML scaffolding
+
+Famo.us HTML scaffolding```<html> <head> <title>famo.us App</title> <meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no" /> <meta name="mobile-web-app-capable" content="yes" /> <meta name="apple-mobile-web-app-capable" content="yes" /> <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
 ```
-<html>
-	<head>
-		<title>famo.us App</title>
-		<meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no" />
-		<meta name="mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!-- shims for backwards compatibility -->
+    <script type="text/javascript" src="http://code.famo.us/lib/functionPrototypeBind.js"></script>
+    <script type="text/javascript" src="http://code.famo.us/lib/classList.js"></script>
+    <script type="text/javascript" src="http://code.famo.us/lib/requestAnimationFrame.js"></script>
 
-		<!-- shims for backwards compatibility -->
-		<script type="text/javascript" src="http://code.famo.us/lib/functionPrototypeBind.js"></script>
-		<script type="text/javascript" src="http://code.famo.us/lib/classList.js"></script>
-		<script type="text/javascript" src="http://code.famo.us/lib/requestAnimationFrame.js"></script>
+    <!-- module loader -->
+    <script type="text/javascript" src="http://code.famo.us/lib/require.js"></script>
 
-		<!-- module loader -->
-		<script type="text/javascript" src="http://code.famo.us/lib/require.js"></script>
+    <!-- famous -->
+    <link rel="stylesheet" type="text/css" href="http://code.famo.us/famous/0.2.0/famous.css" />
+    <script type="text/javascript" src="http://code.famo.us/famous/0.2.0/famous.min.js"></script>
 
-		<!-- famous -->
-		<link rel="stylesheet" type="text/css" href="http://code.famo.us/famous/0.2.0/famous.css" />
-		<script type="text/javascript" src="http://code.famo.us/famous/0.2.0/famous.min.js"></script>
+    <!-- your css -->
+    <!-- <link rel="stylesheet" type="text/css" href="style.css" /> -->
 
-		<!-- your css -->
-		<!-- <link rel="stylesheet" type="text/css" href="style.css" /> -->
+    <!-- your app -->
+    <!-- <script type="text/javascript" src="main.js"></script> -->
 
-		<!-- your app -->
-		<!-- <script type="text/javascript" src="main.js"></script> -->
-
-	</head>
-	<body></body>
-</html>
+</head>
+<body></body>
 ```
+
+</html>```
 
 ##### fambox
-famousBox.js fast but unofficial and UNSUPPORTED scaffolding (use this only for test apps)
-see http://famousco.de/how-to/ for details.
+
+famousBox.js fast but unofficial and UNSUPPORTED scaffolding (use this only for test apps) see http://famousco.de/how-to/ for details.```<html> <head> <title>famo.us App</title> <meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no" /> <meta name="mobile-web-app-capable" content="yes" /> <meta name="apple-mobile-web-app-capable" content="yes" /> <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
 ```
-<html>
-	<head>
-		<title>famo.us App</title>
-		<meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no" />
-		<meta name="mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <script type="text/javascript" src="famousBox.js"></script>
 
-		<script type="text/javascript" src="famousBox.js"></script>
+    <!-- your app -->
+    <!-- <script type="text/javascript" src="main.js"></script> -->
 
-		<!-- your app -->
-		<!-- <script type="text/javascript" src="main.js"></script> -->
-
-	</head>
-	<body></body>
-</html>
+</head>
+<body></body>
 ```
 
+</html>```
 
 #### JavaScript
-A lot of snippets have this syntax:
-`fam + <v|n|t|e> + name` where
-`v` stands for 'variable',
-`n` stands for 'new',
-`t` stands for 'timer',
-`e` stands for 'example'
-and `name` is the same name as Famo.us object lowcase
 
-HeaderFooterLayout = 'famnhflay'
-GridLayout = 'famngridlay'
-FlexibleLayout = 'famnflexlay'
-SequentialLayout = 'famnseqlay'
+######Snippet syntax <br>
 
-others are like:
-`fam + name`
+`fam + <v|n|t|e> + name` where: <br>`v` stands for 'variable', <br>`n` stands for 'new', <br>`t` stands for 'timer', <br>`e` stands for 'example' <br> and `name` is the same name as Famo.us object lowcase.<br><br>
 
+| Layouts           | Names         |
+|-------------------|:-------------:|
+| HeaderFooterLayou |  'famnhflay'  |
+| GridLayout        | 'famngridlay' |
+| FlexibleLayout    | 'famnflexlay' |
+| SequentialLayout  | 'famnseqlay'  |
 
+<br> others are like:`fam + name`<br><br>
 
 ##### famvengine
+
 ```
 var Engine = require('famous/core/Engine');
 ```
 
 ##### famview
+
 ```
 var View = require("famous/core/View");
 ```
 
 ##### famvsurface
+
 ```
 var Surface = require('famous/core/Surface');
 ```
 
 ##### famvimagesurface
+
 ```
 var ImageSurface = require('famous/surfaces/ImageSurface');
 ```
 
 ##### famvinputsurface
+
 ```
 var InputSurface = require('famous/surfaces/InputSurface');
 ```
 
 ##### famvstatemodifier
+
 ```
 var StateModifier = require('famous/modifiers/StateModifier');
 ```
 
 ##### famvmodifier
+
 ```
 var Modifier = require('famous/core/Modifier');
 ```
 
 ##### famvscene
+
 ```
 var Scene = require("famous/core/Scene");
 ```
 
 ##### famvrendernode
+
 ```
 var RenderNode = require('famous/core/RenderNode');
 ```
 
 ##### famvtransform
+
 ```
 var Transform = require('famous/core/Transform');
 ```
 
 ##### famvtransitionable
+
 ```
 var Transitionable = require('famous/transitions/Transitionable');
 ```
 
 ##### famvhflay
+
 ```
 var HeaderFooterLayout = require("famous/views/HeaderFooterLayout");
 ```
 
 ##### famvgridlay
+
 ```
 var GridLayout = require("famous/views/GridLayout");
 ```
 
 ##### famvflexlay
+
 ```
 var FlexibleLayout = require('famous/views/FlexibleLayout');
 ```
 
 ##### famvseqlay
+
 ```
 var SequentialLayout = require("famous/views/SequentialLayout");
 ```
 
 ##### famvflipper
+
 ```
 var Flipper = require("famous/views/Flipper");
 ```
 
 ##### famvddeck
+
 ```
 var Deck = require('famous/views/Deck');
 ```
 
 ##### famvgenericsync
+
 ```
 var GenericSync = require('famous/inputs/GenericSync');
 ```
 
 ##### famvmousesync
+
 ```
 var MouseSync = require('famous/inputs/MouseSync');
 ```
 
 ##### famvtouchsync
+
 ```
 var TouchSync = require('famous/inputs/TouchSync');
 ```
 
 ##### famvscrollsync
+
 ```
 var ScrollSync = require('famous/inputs/ScrollSync');
 ```
 
 ##### famgenericsync
+
 ```
 GenericSync.register({
     'mouse': MouseSync,
@@ -349,6 +350,7 @@ GenericSync.register({
 ```
 
 ##### famnsurface
+
 ```
 var $1 = new Surface({
     size: [undefined, undefined],
@@ -363,6 +365,7 @@ var $1 = new Surface({
 ```
 
 ##### famnimagesurface
+
 ```
 var $1 = new ImageSurface({
     size: [true, true],
@@ -371,6 +374,7 @@ var $1 = new ImageSurface({
 ```
 
 ##### famninputsurface
+
 ```
 var $1 = new InputSurface({
     size: [200, 100],
@@ -380,6 +384,7 @@ var $1 = new InputSurface({
 ```
 
 ##### famnstatemodifier
+
 ```
 var $1 = new StateModifier({
   align: [0, 0],
@@ -389,6 +394,7 @@ var $1 = new StateModifier({
 ```
 
 ##### famnhflay
+
 ```
 /* NEEDS EDITING */
 var $1 = new HeaderFooterLayout({
@@ -404,6 +410,7 @@ $1.footer.add();
 ```
 
 ##### famngridlay
+
 ```
 /* NEEDS EDITING */
 var $1 = new GridLayout({
@@ -418,6 +425,7 @@ $1.sequenceFrom(surfaces);
 ```
 
 ##### famnflexlay
+
 ```
 /* NEEDS EDITING */
 var ratios = [1, 3, 5];
@@ -433,6 +441,7 @@ $1.sequenceFrom(surfaces);
 ```
 
 ##### famnseqlay
+
 ```
 /* NEEDS EDITING */
 var $1 = new SequentialLayout({
@@ -445,16 +454,17 @@ $1.sequenceFrom(surfaces);
 ```
 
 ##### famndeck
+
 ```
 /* NEEDS EDITING */
 var $1 = new Deck({
-	itemSpacing: 10,
-	transition: {
-		method: 'spring',
-		period: 300,
-		dampingRatio: 0.5
-	},
-	stackRotation: 0.02
+    itemSpacing: 10,
+    transition: {
+        method: 'spring',
+        period: 300,
+        dampingRatio: 0.5
+    },
+    stackRotation: 0.02
 });
 var surfaces = [];
 $1.sequenceFrom(surfaces);
@@ -463,6 +473,7 @@ $1.sequenceFrom(surfaces);
 ```
 
 ##### famnrendernode
+
 ```
 /* NEEDS EDITING */
 // var surf = new Surface();
@@ -476,6 +487,7 @@ $1.add(surf);
 ```
 
 ##### famtinterval
+
 ```
 Timer.setInterval(function() {
 
@@ -483,6 +495,7 @@ Timer.setInterval(function() {
 ```
 
 ##### famttimeout
+
 ```
 Timer.setTimeout(function() {
 
@@ -490,6 +503,7 @@ Timer.setTimeout(function() {
 ```
 
 ##### famtevery
+
 ```
 Timer.every(function() {
 
@@ -497,6 +511,7 @@ Timer.every(function() {
 ```
 
 ##### famtafter
+
 ```
 Timer.after(function() {
 
@@ -504,6 +519,7 @@ Timer.after(function() {
 ```
 
 ##### famkeycodes
+
 ```
 Engine.on('keypress', function(event) {
 if (event.charCode >= KeyCodes['0'] && event.charCode <= KeyCodes['9']) {
@@ -514,11 +530,13 @@ if (event.charCode >= KeyCodes['0'] && event.charCode <= KeyCodes['9']) {
 ```
 
 ##### famtransition
+
 ```
 { duration : $1, curve: Easing.linear }
 ```
 
 ##### fameswipe
+
 ```
 /* !ONLY FOR EXAMPLE PURPOSE! */
 var GenericSync     = require('famous/inputs/GenericSync');
