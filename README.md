@@ -155,48 +155,62 @@ If you type prefix and press `tab`, It will be replaced by snippet for it.
 
 ##### famsca
 
-Famo.us HTML scaffolding```<html> <head> <title>famo.us App</title> <meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no" /> <meta name="mobile-web-app-capable" content="yes" /> <meta name="apple-mobile-web-app-capable" content="yes" /> <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+Famo.us HTML scaffolding
 
 ```
-    <!-- shims for backwards compatibility -->
-    <script type="text/javascript" src="http://code.famo.us/lib/functionPrototypeBind.js"></script>
-    <script type="text/javascript" src="http://code.famo.us/lib/classList.js"></script>
-    <script type="text/javascript" src="http://code.famo.us/lib/requestAnimationFrame.js"></script>
+<html>
+    <head>
+        <title>famo.us App</title>
+        <meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
-    <!-- module loader -->
-    <script type="text/javascript" src="http://code.famo.us/lib/require.js"></script>
+        <!-- shims for backwards compatibility -->
+        <script type="text/javascript" src="http://code.famo.us/lib/functionPrototypeBind.js"></script>
+        <script type="text/javascript" src="http://code.famo.us/lib/classList.js"></script>
+        <script type="text/javascript" src="http://code.famo.us/lib/requestAnimationFrame.js"></script>
 
-    <!-- famous -->
-    <link rel="stylesheet" type="text/css" href="http://code.famo.us/famous/0.2.0/famous.css" />
-    <script type="text/javascript" src="http://code.famo.us/famous/0.2.0/famous.min.js"></script>
+        <!-- module loader -->
+        <script type="text/javascript" src="http://code.famo.us/lib/require.js"></script>
 
-    <!-- your css -->
-    <!-- <link rel="stylesheet" type="text/css" href="style.css" /> -->
+        <!-- famous -->
+        <link rel="stylesheet" type="text/css" href="http://code.famo.us/famous/0.2.0/famous.css" />
+        <script type="text/javascript" src="http://code.famo.us/famous/0.2.0/famous.min.js"></script>
 
-    <!-- your app -->
-    <!-- <script type="text/javascript" src="main.js"></script> -->
+        <!-- your css -->
+        <!-- <link rel="stylesheet" type="text/css" href="style.css" /> -->
 
-</head>
-<body></body>
+        <!-- your app -->
+        <!-- <script type="text/javascript" src="main.js"></script> -->
+
+    </head>
+    <body></body>
+</html>
 ```
-
-</html>```
 
 ##### fambox
 
-famousBox.js fast but unofficial and UNSUPPORTED scaffolding (use this only for test apps) see http://famousco.de/how-to/ for details.```<html> <head> <title>famo.us App</title> <meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no" /> <meta name="mobile-web-app-capable" content="yes" /> <meta name="apple-mobile-web-app-capable" content="yes" /> <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+famousBox.js fast but unofficial and UNSUPPORTED scaffolding (use this only for test apps) see http://famousco.de/how-to/ for details.
 
 ```
-    <script type="text/javascript" src="famousBox.js"></script>
+<html>
+    <head>
+        <title>famo.us App</title>
+        <meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
-    <!-- your app -->
-    <!-- <script type="text/javascript" src="main.js"></script> -->
+        <script type="text/javascript" src="famousBox.js"></script>
 
-</head>
-<body></body>
+        <!-- your app -->
+        <!-- <script type="text/javascript" src="main.js"></script> -->
+
+    </head>
+    <body></body>
+</html>
 ```
-
-</html>```
 
 #### JavaScript
 
