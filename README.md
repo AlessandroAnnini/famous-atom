@@ -276,7 +276,7 @@ var Modifier = require('famous/core/Modifier');
 ##### famvscene
 
 ```
-var Scene = require("famous/core/Scene");
+var Scene = require('famous/core/Scene');
 ```
 
 ##### famvrendernode
@@ -300,13 +300,13 @@ var Transitionable = require('famous/transitions/Transitionable');
 ##### famvhflay
 
 ```
-var HeaderFooterLayout = require("famous/views/HeaderFooterLayout");
+var HeaderFooterLayout = require('famous/views/HeaderFooterLayout');
 ```
 
 ##### famvgridlay
 
 ```
-var GridLayout = require("famous/views/GridLayout");
+var GridLayout = require('famous/views/GridLayout');
 ```
 
 ##### famvflexlay
@@ -318,13 +318,13 @@ var FlexibleLayout = require('famous/views/FlexibleLayout');
 ##### famvseqlay
 
 ```
-var SequentialLayout = require("famous/views/SequentialLayout");
+var SequentialLayout = require('famous/views/SequentialLayout');
 ```
 
 ##### famvflipper
 
 ```
-var Flipper = require("famous/views/Flipper");
+var Flipper = require('famous/views/Flipper');
 ```
 
 ##### famvddeck
