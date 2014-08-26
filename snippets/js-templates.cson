@@ -4,7 +4,7 @@
     "body": "var Engine = require('famous/core/Engine');"
   "load View":
     "prefix": "famvview"
-    "body": "var View = require("famous/core/View");"
+    "body": "var View = require('famous/core/View');"
   "load Surface":
     "prefix": "famvsurface"
     "body": "var Surface = require('famous/core/Surface');"
@@ -22,7 +22,7 @@
     "body": "var Modifier = require('famous/core/Modifier');"
   "load Scene":
     "prefix": "famvscene"
-    "body": "var Scene = require("famous/core/Scene");"
+    "body": "var Scene = require('famous/core/Scene');"
   "load RenderNode":
     "prefix": "famvrendernode"
     "body": "var RenderNode = require('famous/core/RenderNode');"
@@ -34,19 +34,19 @@
     "body": "var Transitionable = require('famous/transitions/Transitionable');"
   "load HeaderFooterLayout":
     "prefix": "famvhflay"
-    "body": "var HeaderFooterLayout = require("famous/views/HeaderFooterLayout");"
+    "body": "var HeaderFooterLayout = require('famous/views/HeaderFooterLayout');"
   "load GridLayout":
     "prefix": "famvgridlay"
-    "body": "var GridLayout = require("famous/views/GridLayout");"
+    "body": "var GridLayout = require('famous/views/GridLayout');"
   "load FlexibleLayout":
     "prefix": "famvflexlay"
     "body": "var FlexibleLayout = require('famous/views/FlexibleLayout');"
   "load SequentialLayout":
     "prefix": "famvseqlay"
-    "body": "var SequentialLayout = require("famous/views/SequentialLayout");"
+    "body": "var SequentialLayout = require('famous/views/SequentialLayout');"
   "load Flipper":
     "prefix": "famvflipper"
-    "body": "var Flipper = require("famous/views/Flipper");"
+    "body": "var Flipper = require('famous/views/Flipper');"
   "load Deck":
     "prefix": "famvdeck"
     "body": "var Deck = require('famous/views/Deck');"
