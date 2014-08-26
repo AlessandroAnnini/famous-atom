@@ -76,7 +76,7 @@
         'NavigationBar'
         'TabBar'
         'ToggleButton'
-		
+
 		'click'
 		'mousedown'
 		'mousemove'
@@ -90,7 +90,7 @@
 		'keydown'
 		'keyup'
 		'keypress'
-		
+
 		'inQuad'
 		'outQuad'
 		'inOutQuad'
@@ -121,7 +121,7 @@
 		'inBounce'
 		'outBounce'
 		'inOutBounce'
-		
+
 		'famvengine'
 		'famvview'
 		'famvsurface'
@@ -162,4 +162,5 @@
 		'famkeycodes'
 		'famtransition'
 		'fameswipe'
+        'famboilerplate'
     ]
