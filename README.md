@@ -621,7 +621,7 @@ AppView.prototype.slideRight = function() {
 ##### famboilerplate
 
 ```
-define(function(require, exports, module) {
+//define(function(require, exports, module) {
     // import dependencies
     var Engine = require('famous/core/Engine');
     var Modifier = require('famous/core/Modifier');
@@ -650,5 +650,5 @@ define(function(require, exports, module) {
     });
 
     mainContext.add(centerSpinModifier).add(logo);
-});
+//});
 ```

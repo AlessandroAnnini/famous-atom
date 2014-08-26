@@ -315,7 +315,7 @@
   "Boilerplate":
     "prefix": "famboilerplate"
     "body": """
-    define(function(require, exports, module) {
+    //define(function(require, exports, module) {
         // import dependencies
         var Engine = require('famous/core/Engine');
         var Modifier = require('famous/core/Modifier');
@@ -344,5 +344,5 @@
         });
 
         mainContext.add(centerSpinModifier).add(logo);
-    });
+    //});
     """
