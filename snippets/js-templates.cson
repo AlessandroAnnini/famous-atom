@@ -2,6 +2,9 @@
   "load Engine":
     "prefix": "famvengine"
     "body": "var Engine = require('famous/core/Engine');"
+  "load View":
+    "prefix": "famvview"
+    "body": "var View = require("famous/core/View");"
   "load Surface":
     "prefix": "famvsurface"
     "body": "var Surface = require('famous/core/Surface');"
@@ -17,6 +20,9 @@
   "load Modifier":
     "prefix": "famvmodifier"
     "body": "var Modifier = require('famous/core/Modifier');"
+  "load Scene":
+    "prefix": "famvscene"
+    "body": "var Scene = require("famous/core/Scene");"	
   "load RenderNode":
     "prefix": "famvrendernode"
     "body": "var RenderNode = require('famous/core/RenderNode');"
@@ -26,6 +32,21 @@
   "load Transitionable":
     "prefix": "famvtransitionable"
     "body": "var Transitionable = require('famous/transitions/Transitionable');"
+  "load HeaderFooterLayout":
+    "prefix": "famvhflay"
+    "body": "var HeaderFooterLayout = require("famous/views/HeaderFooterLayout");"
+  "load GridLayout":
+    "prefix": "famvgridlay"
+    "body": "var GridLayout = require("famous/views/GridLayout");"
+  "load FlexibleLayout":
+    "prefix": "famvflexlay"
+    "body": "var FlexibleLayout = require('famous/views/FlexibleLayout');"
+  "load SequentialLayout":
+    "prefix": "famvseqlay"
+    "body": "var SequentialLayout = require("famous/views/SequentialLayout");"
+  "load Flipper":
+    "prefix": "famvflipper"
+    "body": "var Flipper = require("famous/views/Flipper");"
   "load GenericSync":
     "prefix": "famvgenericsync"
     "body": "var GenericSync = require('famous/inputs/GenericSync');"
@@ -38,7 +59,7 @@
   "load ScrollSync":
     "prefix": "famvscrollsync"
     "body": "var ScrollSync = require('famous/inputs/ScrollSync');"
-  "GenericSync":
+  "new GenericSync":
     "prefix": "famgenericsync"
     "body": """
     GenericSync.register({
@@ -87,11 +108,8 @@
           transform: Transform.translate(0, 0, 0)
         });
     """
-  "transition":
-    "prefix": "famtransition"
-    "body": "{ duration : $1, curve: Easing.linear }"
-  "header footer layout":
-    "prefix": "famnheaderfooterlayout"
+  "new Header Footer Layout":
+    "prefix": "famnhflay"
     "body": """
         /* NEEDS EDITING */
         var $1 = new HeaderFooterLayout({
@@ -105,8 +123,8 @@
 
         //mainContext.add($1);
     """
-  "grid layout":
-    "prefix": "famngridlayout"
+  "new Grid Layout":
+    "prefix": "famngridlay"
     "body": """
         /* NEEDS EDITING */
         var $1 = new GridLayout({
@@ -119,8 +137,8 @@
 
         //mainContext.add($1);
     """
-  "flexible layout":
-    "prefix": "famnflexiblelayout"
+  "new Flexible Layout":
+    "prefix": "famnflexlay"
     "body": """
         /* NEEDS EDITING */
         var ratios = [1, 3, 5];
@@ -134,8 +152,8 @@
 
         //mainContext.add($1);
     """
-  "sequential layout":
-    "prefix": "famnsequentiallayout"
+  "new Sequential Layout":
+    "prefix": "famnseqlay"
     "body": """
         /* NEEDS EDITING */
         var $1 = new SequentialLayout({
@@ -146,9 +164,89 @@
         // surfaces.push(new Surface());
         // mainContext.add($1);
     """
+  "new Deck":
+    "prefix": "famndeck"
+    "body": """
+        /* NEEDS EDITING */
+        var $1 = new Deck({
+			itemSpacing: 10,
+			transition: {
+				method: 'spring',
+				period: 300,
+				dampingRatio: 0.5
+			},
+			stackRotation: 0.02
+		});
+        var surfaces = [];
+        $1.sequenceFrom(surfaces);
+        // surfaces.push(new Surface());
+        // mainContext.add($1);
+    """
+  "new Flipper":
+    "prefix": "famnflipper"
+    "body": """
+        var $1 = new Flipper();
+		$1.setFront(new Surface());
+		$1.setBack(new Surface());
+        // mainContext.add($1);
+    """
+  "new RenderNode":
+    "prefix": "famnrendernode"
+    "body": """
+        /* NEEDS EDITING */
+        // var surf = new Surface();
+        // var mod = new StateModifier();
 
-  "swipe example":
-    "prefix": "famswipe"
+        var $1 = new RenderNode(mod);
+        $1.add(surf);
+
+        // $1.add(mod).add(surf);
+        // mainContext.add($1);
+    """
+  "Timer setInterval":
+    "prefix": "faminterval"
+    "body": """
+        Timer.setInterval(function() {
+
+        }, $1);
+    """
+  "Timer setTimeout":
+    "prefix": "famtimeout"
+    "body": """
+        Timer.setTimeout(function() {
+
+        }, $1);
+    """
+  "Timer every":
+    "prefix": "famevery"
+    "body": """
+        Timer.every(function() {
+
+        }, $1);
+    """
+  "Timer after":
+    "prefix": "famafter"
+    "body": """
+        Timer.after(function() {
+
+        }, $1);
+    """
+  "Keycodes":
+    "prefix": "famkeycodes"
+    "body": """
+        Engine.on('keypress', function(event) {
+			if (event.charCode >= KeyCodes['0'] && event.charCode <= KeyCodes['9']) {
+				console.log('you hit a number');
+			} else {
+				console.log('not a number');
+			}
+		});
+    """
+  "Transition":
+    "prefix": "famtransition"
+    "body": "{ duration : $1, curve: Easing.linear }"
+  "example Swipe":
+    "prefix": "fameswipe"
     "body": """
         /* !ONLY FOR EXAMPLE PURPOSE! */
         var GenericSync     = require('famous/inputs/GenericSync');
@@ -210,56 +308,4 @@
 
             }.bind(this));
         };
-    """
-  "new renderNode":
-    "prefix": "famnrendernode"
-    "body": """
-        /* NEEDS EDITING */
-        // var surf = new Surface();
-        // var mod = new StateModifier();
-
-        var $1 = new RenderNode(mod);
-        $1.add(surf);
-
-        // $1.add(mod).add(surf);
-        // mainContext.add($1);
-    """
-  "timer setInterval":
-    "prefix": "faminterval"
-    "body": """
-        Timer.setInterval(function() {
-
-        }, $1);
-    """
-  "timer setTimeout":
-    "prefix": "famtimeout"
-    "body": """
-        Timer.setTimeout(function() {
-
-        }, $1);
-    """
-  "timer every":
-    "prefix": "famevery"
-    "body": """
-        Timer.every(function() {
-
-        }, $1);
-    """
-  "timer after":
-    "prefix": "famafter"
-    "body": """
-        Timer.after(function() {
-
-        }, $1);
-    """
-  "keycodes":
-    "prefix": "famkeycodes"
-    "body": """
-        Engine.on('keypress', function(event) {
-        if (event.charCode >= KeyCodes['0'] && event.charCode <= KeyCodes['9']) {
-            console.log('you hit a number');
-        } else {
-            console.log('not a number');
-        }
-    });
     """

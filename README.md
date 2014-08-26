@@ -212,10 +212,17 @@ see http://famousco.de/how-to/ for details.
 
 #### JavaScript
 A lot of snippets have this syntax:
-`fam + <v|n> + name`
-where `v` stands for 'variable'
-and `n` stands for 'new'
-`name` is the same name as Famo.us object lowcase
+`fam + <v|n|t|e> + name` where
+`v` stands for 'variable',
+`n` stands for 'new',
+`t` stands for 'timer',
+`e` stands for 'example'
+and `name` is the same name as Famo.us object lowcase
+
+HeaderFooterLayout = 'famnhflay'
+GridLayout = 'famngridlay'
+FlexibleLayout = 'famnflexlay'
+SequentialLayout = 'famnseqlay'
 
 others are like:
 `fam + name`
