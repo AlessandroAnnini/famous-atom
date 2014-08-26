@@ -47,6 +47,9 @@
   "load Flipper":
     "prefix": "famvflipper"
     "body": "var Flipper = require("famous/views/Flipper");"
+  "load Deck":
+    "prefix": "famvdeck"
+    "body": "var Deck = require('famous/views/Deck');"	
   "load GenericSync":
     "prefix": "famvgenericsync"
     "body": "var GenericSync = require('famous/inputs/GenericSync');"

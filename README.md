@@ -162,29 +162,33 @@ It will be replaced by snippet for it.
 Famo.us HTML scaffolding
 ```
 <html>
-    <head>
-      <title>famo.us App</title>
-      <meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no" />
-      <meta name="mobile-web-app-capable" content="yes" />
-      <meta name="apple-mobile-web-app-capable" content="yes" />
-      <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<head>
+		<title>famo.us App</title>
+		<meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no" />
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
-      <!-- shims for backwards compatibility -->
-      <script type="text/javascript" src="http://code.famo.us/lib/functionPrototypeBind.js"></script>
-      <script type="text/javascript" src="http://code.famo.us/lib/classList.js"></script>
-      <script type="text/javascript" src="http://code.famo.us/lib/requestAnimationFrame.js"></script>
+		<!-- shims for backwards compatibility -->
+		<script type="text/javascript" src="http://code.famo.us/lib/functionPrototypeBind.js"></script>
+		<script type="text/javascript" src="http://code.famo.us/lib/classList.js"></script>
+		<script type="text/javascript" src="http://code.famo.us/lib/requestAnimationFrame.js"></script>
 
-      <!-- module loader -->
-      <script type="text/javascript" src="http://code.famo.us/lib/require.js"></script>
+		<!-- module loader -->
+		<script type="text/javascript" src="http://code.famo.us/lib/require.js"></script>
 
-      <!-- famous -->
-      <link rel="stylesheet" type="text/css" href="http://code.famo.us/famous/0.2.0/famous.css" />
-      <script type="text/javascript" src="http://code.famo.us/famous/0.2.0/famous.min.js"></script>
+		<!-- famous -->
+		<link rel="stylesheet" type="text/css" href="http://code.famo.us/famous/0.2.0/famous.css" />
+		<script type="text/javascript" src="http://code.famo.us/famous/0.2.0/famous.min.js"></script>
 
-      <!-- ... -->
+		<!-- your css -->
+		<!-- <link rel="stylesheet" type="text/css" href="style.css" /> -->
 
-    </head>
-    <body></body>
+		<!-- your app -->
+		<!-- <script type="text/javascript" src="main.js"></script> -->
+
+	</head>
+	<body></body>
 </html>
 ```
 
@@ -193,19 +197,20 @@ famousBox.js fast but unofficial and UNSUPPORTED scaffolding (use this only for 
 see http://famousco.de/how-to/ for details.
 ```
 <html>
-  <head>
-      <title>famo.us App</title>
-      <meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no" />
-      <meta name="mobile-web-app-capable" content="yes" />
-      <meta name="apple-mobile-web-app-capable" content="yes" />
-      <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<head>
+		<title>famo.us App</title>
+		<meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no" />
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
-      <script type="text/javascript" src="famousBox.js"></script>
+		<script type="text/javascript" src="famousBox.js"></script>
 
-      <!-- ... -->
+		<!-- your app -->
+		<!-- <script type="text/javascript" src="main.js"></script> -->
 
-  </head>
-  <body></body>
+	</head>
+	<body></body>
 </html>
 ```
 
@@ -234,6 +239,11 @@ others are like:
 var Engine = require('famous/core/Engine');
 ```
 
+##### famview
+```
+var View = require("famous/core/View");
+```
+
 ##### famvsurface
 ```
 var Surface = require('famous/core/Surface');
@@ -259,6 +269,11 @@ var StateModifier = require('famous/modifiers/StateModifier');
 var Modifier = require('famous/core/Modifier');
 ```
 
+##### famvscene
+```
+var Scene = require("famous/core/Scene");
+```
+
 ##### famvrendernode
 ```
 var RenderNode = require('famous/core/RenderNode');
@@ -272,6 +287,36 @@ var Transform = require('famous/core/Transform');
 ##### famvtransitionable
 ```
 var Transitionable = require('famous/transitions/Transitionable');
+```
+
+##### famvhflay
+```
+var HeaderFooterLayout = require("famous/views/HeaderFooterLayout");
+```
+
+##### famvgridlay
+```
+var GridLayout = require("famous/views/GridLayout");
+```
+
+##### famvflexlay
+```
+var FlexibleLayout = require('famous/views/FlexibleLayout');
+```
+
+##### famvseqlay
+```
+var SequentialLayout = require("famous/views/SequentialLayout");
+```
+
+##### famvflipper
+```
+var Flipper = require("famous/views/Flipper");
+```
+
+##### famvddeck
+```
+var Deck = require('famous/views/Deck');
 ```
 
 ##### famvgenericsync
@@ -343,12 +388,7 @@ var $1 = new StateModifier({
 });
 ```
 
-##### famtransition
-```
-{ duration : $1, curve: Easing.linear }
-```
-
-##### famnheaderfooterlayout
+##### famnhflay
 ```
 /* NEEDS EDITING */
 var $1 = new HeaderFooterLayout({
@@ -363,7 +403,7 @@ $1.footer.add();
 //mainContext.add($1);
 ```
 
-##### famngridlayout
+##### famngridlay
 ```
 /* NEEDS EDITING */
 var $1 = new GridLayout({
@@ -377,7 +417,7 @@ $1.sequenceFrom(surfaces);
 //mainContext.add($1);
 ```
 
-##### famnflexiblelayout
+##### famnflexlay
 ```
 /* NEEDS EDITING */
 var ratios = [1, 3, 5];
@@ -392,7 +432,7 @@ $1.sequenceFrom(surfaces);
 //mainContext.add($1);
 ```
 
-##### famnsequentiallayout
+##### famnseqlay
 ```
 /* NEEDS EDITING */
 var $1 = new SequentialLayout({
@@ -404,7 +444,81 @@ $1.sequenceFrom(surfaces);
 // mainContext.add($1);
 ```
 
-##### famswipe
+##### famndeck
+```
+/* NEEDS EDITING */
+var $1 = new Deck({
+	itemSpacing: 10,
+	transition: {
+		method: 'spring',
+		period: 300,
+		dampingRatio: 0.5
+	},
+	stackRotation: 0.02
+});
+var surfaces = [];
+$1.sequenceFrom(surfaces);
+// surfaces.push(new Surface());
+// mainContext.add($1);
+```
+
+##### famnrendernode
+```
+/* NEEDS EDITING */
+// var surf = new Surface();
+// var mod = new StateModifier();
+
+var $1 = new RenderNode(mod);
+$1.add(surf);
+
+// $1.add(mod).add(surf);
+// mainContext.add($1);
+```
+
+##### famtinterval
+```
+Timer.setInterval(function() {
+
+}, $1);
+```
+
+##### famttimeout
+```
+Timer.setTimeout(function() {
+
+}, $1);
+```
+
+##### famtevery
+```
+Timer.every(function() {
+
+}, $1);
+```
+
+##### famtafter
+```
+Timer.after(function() {
+
+}, $1);
+```
+
+##### famkeycodes
+```
+Engine.on('keypress', function(event) {
+if (event.charCode >= KeyCodes['0'] && event.charCode <= KeyCodes['9']) {
+    console.log('you hit a number');
+} else {
+    console.log('not a number');
+}
+```
+
+##### famtransition
+```
+{ duration : $1, curve: Easing.linear }
+```
+
+##### fameswipe
 ```
 /* !ONLY FOR EXAMPLE PURPOSE! */
 var GenericSync     = require('famous/inputs/GenericSync');
@@ -466,55 +580,4 @@ AppView.prototype.slideRight = function() {
 
     }.bind(this));
 };
-```
-
-##### famnrendernode
-```
-/* NEEDS EDITING */
-// var surf = new Surface();
-// var mod = new StateModifier();
-
-var $1 = new RenderNode(mod);
-$1.add(surf);
-
-// $1.add(mod).add(surf);
-// mainContext.add($1);
-```
-
-##### faminterval
-```
-Timer.setInterval(function() {
-
-}, $1);
-```
-
-##### famtimeout
-```
-Timer.setTimeout(function() {
-
-}, $1);
-```
-
-##### famevery
-```
-Timer.every(function() {
-
-}, $1);
-```
-
-##### famafter
-```
-Timer.after(function() {
-
-}, $1);
-```
-
-##### famkeycodes
-```
-Engine.on('keypress', function(event) {
-if (event.charCode >= KeyCodes['0'] && event.charCode <= KeyCodes['9']) {
-    console.log('you hit a number');
-} else {
-    console.log('not a number');
-}
 ```
