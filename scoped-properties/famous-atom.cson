@@ -13,9 +13,11 @@
 		'Transform'
 		'View'
 		'ViewSequence'
+		
 		'EventArbiter'
 		'EventFilter'
 		'EventMapper'
+		
 		'FastClick'
 		'GenericSync'
 		'MouseSync'
@@ -26,10 +28,12 @@
 		'TouchSync'
 		'TouchTracker'
 		'TwoFingerSync'
+		
 		'Matrix'
 		'Random'
 		'Quaternion'
 		'Vector'
+		
 		'Draggable'
 		'Lift'
 		'ModifierChain'
@@ -41,6 +45,7 @@
 		'SubmitInputSurface'
 		'TextareaSurface'
 		'VideoSurface'
+		
 		'CachedMap'
 		'Easing'
 		'MultipleTransition'
@@ -50,9 +55,11 @@
 		'TransitionableTransform'
 		'TweenTransition'
 		'WallTransition'
+		
 		'KeyCodes'
 		'Timer'
 		'Utility'
+		
 		'Deck'
 		'EdgeSwapper'
 		'Flipper'
@@ -64,9 +71,11 @@
 		'Scroller'
 		'Scrollview'
 		'SequentialLayout'
+		
 		'NavigationBar'
 		'TabBar'
 		'ToggleButton'
+		
 		'click'
 		'mousedown'
 		'mousemove'
@@ -80,6 +89,7 @@
 		'keydown'
 		'keyup'
 		'keypress'
+		
 		'inQuad'
 		'outQuad'
 		'inOutQuad'
@@ -110,6 +120,7 @@
 		'inBounce'
 		'outBounce'
 		'inOutBounce'
+		
 		'famvengine'
 		'famvview'
 		'famvsurface'
