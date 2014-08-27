@@ -1,0 +1,748 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>Famous-atom</title>
+  <meta name="description" content="A Famo.us package for Atom.io editor">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Famous-atom</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">A Famo.us package for Atom.io editor</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/sun2rise/famous-atom/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/sun2rise/famous-atom/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/sun2rise/famous-atom" class="code">View Famous-atom on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h1>
+<a name="famous-support-in-atom" class="anchor" href="#famous-support-in-atom"><span class="octicon octicon-link"></span></a>Famo.us support in Atom</h1>
+
+<p><strong><a href="http://famo.us/">famo.us</a></strong> - official website</p>
+
+<p><strong><a href="http://famousco.de/">famousco.de</a></strong> - first unofficial Famo.us resource website</p>
+
+<p>Adds syntax highlighting and snippets to Famo.us in Atom.</p>
+
+<p><img src="https://raw.githubusercontent.com/sun2rise/famous-atom/master/screenshots/famous-atom.gif" alt=""></p>
+
+<p>Contributions are greatly appreciated. Please fork this repository and open a pull request to add snippets, make grammar tweaks, etc.</p>
+
+<h2>
+<a name="supported-features" class="anchor" href="#supported-features"><span class="octicon octicon-link"></span></a>Supported features</h2>
+
+<h3>
+<a name="autocompletes" class="anchor" href="#autocompletes"><span class="octicon octicon-link"></span></a>Autocompletes</h3>
+
+<p>You can use autocompletes for Famo.us's variables and function in JavaScript and HTML scaffolding. See scoped-properties folder for more details.</p>
+
+<p>If you type some prefix and press <code>ctrl</code> + <code>space</code>, you can use autocompletes in below.</p>
+
+<h4>
+<a name="javascript" class="anchor" href="#javascript"><span class="octicon octicon-link"></span></a>JavaScript</h4>
+
+<pre><code>Context
+Engine
+EventEmitter
+EventHandler
+OptionsManager
+Modifier
+RenderNode
+Scene
+Surface
+Transform
+View
+ViewSequence
+
+EventArbiter
+EventFilter
+EventMapper
+
+FastClick
+GenericSync
+MouseSync
+PinchSync
+RotateSync
+ScaleSync
+ScrollSync
+TouchSync
+TouchTracker
+TwoFingerSync
+
+Matrix
+Random
+Quaternion
+Vector
+
+Draggable
+Lift
+ModifierChain
+StateModifier
+
+CanvasSurface
+ContainerSurface
+ImageSurface
+InputSurface
+SubmitInputSurface
+TextareaSurface
+VideoSurface
+
+CachedMap
+Easing
+MultipleTransition
+SnapTransition
+SpringTransition
+Transitionable
+TransitionableTransform
+TweenTransition
+WallTransition
+
+KeyCodes
+Timer
+Utility
+
+Deck
+EdgeSwapper
+Flipper
+GridLayout
+HeaderFooterLayout
+Lightbox
+RenderController
+ScrollContainer
+Scroller
+Scrollview
+SequentialLayout
+
+NavigationBar
+TabBar
+ToggleButton
+
+click
+mousedown
+mousemove
+mouseup
+mouseover
+mouseout
+touchstart
+touchmove
+touchend
+touchcancel
+keydown
+keyup
+keypress
+
+inQuad
+outQuad
+inOutQuad
+inCubic
+outCubic
+inOutCubic
+inQuart
+outQuart
+inOutQuart
+inQuint
+outQuint
+inOutQuint
+inSine
+outSine
+inOutSine
+inExpo
+outExpo
+inOutExpo
+inCirc
+outCirc
+inOutCirc
+inElastic
+outElastic
+inOutElastic
+inBack
+outBack
+inOutBack
+inBounce
+outBounce
+inOutBounce
+</code></pre>
+
+<h3>
+<a name="snippets" class="anchor" href="#snippets"><span class="octicon octicon-link"></span></a>Snippets</h3>
+
+<p>You can use snippets in HTML and JavaScript. See snippets folder for more details.</p>
+
+<p>If you type prefix and press <code>tab</code>, It will be replaced by snippet for it.</p>
+
+<h4>
+<a name="html" class="anchor" href="#html"><span class="octicon octicon-link"></span></a>HTML</h4>
+
+<h5>
+<a name="famsca" class="anchor" href="#famsca"><span class="octicon octicon-link"></span></a>famsca</h5>
+
+<p>Famo.us HTML scaffolding</p>
+
+<pre><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;famo.us App&lt;/title&gt;
+        &lt;meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no" /&gt;
+        &lt;meta name="mobile-web-app-capable" content="yes" /&gt;
+        &lt;meta name="apple-mobile-web-app-capable" content="yes" /&gt;
+        &lt;meta name="apple-mobile-web-app-status-bar-style" content="black" /&gt;
+
+        &lt;!-- shims for backwards compatibility --&gt;
+        &lt;script type="text/javascript" src="http://code.famo.us/lib/functionPrototypeBind.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="http://code.famo.us/lib/classList.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="http://code.famo.us/lib/requestAnimationFrame.js"&gt;&lt;/script&gt;
+
+        &lt;!-- module loader --&gt;
+        &lt;script type="text/javascript" src="http://code.famo.us/lib/require.js"&gt;&lt;/script&gt;
+
+        &lt;!-- famous --&gt;
+        &lt;link rel="stylesheet" type="text/css" href="http://code.famo.us/famous/0.2.0/famous.css" /&gt;
+        &lt;script type="text/javascript" src="http://code.famo.us/famous/0.2.0/famous.min.js"&gt;&lt;/script&gt;
+
+        &lt;!-- your css --&gt;
+        &lt;!-- &lt;link rel="stylesheet" type="text/css" href="style.css" /&gt; --&gt;
+
+        &lt;!-- your app --&gt;
+        &lt;!-- &lt;script type="text/javascript" src="main.js"&gt;&lt;/script&gt; --&gt;
+
+    &lt;/head&gt;
+    &lt;body&gt;&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+
+<h5>
+<a name="fambox" class="anchor" href="#fambox"><span class="octicon octicon-link"></span></a>fambox</h5>
+
+<p>famousBox.js fast but unofficial and UNSUPPORTED scaffolding (use this only for test apps) see <a href="http://famousco.de/how-to/">http://famousco.de/how-to/</a> for details.</p>
+
+<pre><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;famo.us App&lt;/title&gt;
+        &lt;meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no" /&gt;
+        &lt;meta name="mobile-web-app-capable" content="yes" /&gt;
+        &lt;meta name="apple-mobile-web-app-capable" content="yes" /&gt;
+        &lt;meta name="apple-mobile-web-app-status-bar-style" content="black" /&gt;
+
+        &lt;script type="text/javascript" src="famousBox.js"&gt;&lt;/script&gt;
+
+        &lt;!-- your app --&gt;
+        &lt;!-- &lt;script type="text/javascript" src="main.js"&gt;&lt;/script&gt; --&gt;
+
+    &lt;/head&gt;
+    &lt;body&gt;&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+
+<h4>
+<a name="javascript-1" class="anchor" href="#javascript-1"><span class="octicon octicon-link"></span></a>JavaScript</h4>
+
+<h6>
+<a name="snippet-syntax-" class="anchor" href="#snippet-syntax-"><span class="octicon octicon-link"></span></a>Snippet syntax <br>
+</h6>
+
+<p><code>fam + &lt;v|n|t|e&gt; + name</code> where: <br><code>v</code> stands for 'variable', <br><code>n</code> stands for 'new', <br><code>t</code> stands for 'timer', <br><code>e</code> stands for 'example' <br> and <code>name</code> is the same name as Famo.us object lowcase.<br><br></p>
+
+<table>
+<thead><tr>
+<th>Layouts</th>
+<th align="center">Names</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>HeaderFooterLayou</td>
+<td align="center">'famnhflay'</td>
+</tr>
+<tr>
+<td>GridLayout</td>
+<td align="center">'famngridlay'</td>
+</tr>
+<tr>
+<td>FlexibleLayout</td>
+<td align="center">'famnflexlay'</td>
+</tr>
+<tr>
+<td>SequentialLayout</td>
+<td align="center">'famnseqlay'</td>
+</tr>
+</tbody>
+</table><p><br> others are like:<code>fam + name</code><br><br></p>
+
+<h5>
+<a name="famvengine" class="anchor" href="#famvengine"><span class="octicon octicon-link"></span></a>famvengine</h5>
+
+<pre><code>var Engine = require('famous/core/Engine');
+</code></pre>
+
+<h5>
+<a name="famview" class="anchor" href="#famview"><span class="octicon octicon-link"></span></a>famview</h5>
+
+<pre><code>var View = require("famous/core/View");
+</code></pre>
+
+<h5>
+<a name="famvsurface" class="anchor" href="#famvsurface"><span class="octicon octicon-link"></span></a>famvsurface</h5>
+
+<pre><code>var Surface = require('famous/core/Surface');
+</code></pre>
+
+<h5>
+<a name="famvimagesurface" class="anchor" href="#famvimagesurface"><span class="octicon octicon-link"></span></a>famvimagesurface</h5>
+
+<pre><code>var ImageSurface = require('famous/surfaces/ImageSurface');
+</code></pre>
+
+<h5>
+<a name="famvinputsurface" class="anchor" href="#famvinputsurface"><span class="octicon octicon-link"></span></a>famvinputsurface</h5>
+
+<pre><code>var InputSurface = require('famous/surfaces/InputSurface');
+</code></pre>
+
+<h5>
+<a name="famvstatemodifier" class="anchor" href="#famvstatemodifier"><span class="octicon octicon-link"></span></a>famvstatemodifier</h5>
+
+<pre><code>var StateModifier = require('famous/modifiers/StateModifier');
+</code></pre>
+
+<h5>
+<a name="famvmodifier" class="anchor" href="#famvmodifier"><span class="octicon octicon-link"></span></a>famvmodifier</h5>
+
+<pre><code>var Modifier = require('famous/core/Modifier');
+</code></pre>
+
+<h5>
+<a name="famvscene" class="anchor" href="#famvscene"><span class="octicon octicon-link"></span></a>famvscene</h5>
+
+<pre><code>var Scene = require('famous/core/Scene');
+</code></pre>
+
+<h5>
+<a name="famvrendernode" class="anchor" href="#famvrendernode"><span class="octicon octicon-link"></span></a>famvrendernode</h5>
+
+<pre><code>var RenderNode = require('famous/core/RenderNode');
+</code></pre>
+
+<h5>
+<a name="famvtransform" class="anchor" href="#famvtransform"><span class="octicon octicon-link"></span></a>famvtransform</h5>
+
+<pre><code>var Transform = require('famous/core/Transform');
+</code></pre>
+
+<h5>
+<a name="famvtransitionable" class="anchor" href="#famvtransitionable"><span class="octicon octicon-link"></span></a>famvtransitionable</h5>
+
+<pre><code>var Transitionable = require('famous/transitions/Transitionable');
+</code></pre>
+
+<h5>
+<a name="famvhflay" class="anchor" href="#famvhflay"><span class="octicon octicon-link"></span></a>famvhflay</h5>
+
+<pre><code>var HeaderFooterLayout = require('famous/views/HeaderFooterLayout');
+</code></pre>
+
+<h5>
+<a name="famvgridlay" class="anchor" href="#famvgridlay"><span class="octicon octicon-link"></span></a>famvgridlay</h5>
+
+<pre><code>var GridLayout = require('famous/views/GridLayout');
+</code></pre>
+
+<h5>
+<a name="famvflexlay" class="anchor" href="#famvflexlay"><span class="octicon octicon-link"></span></a>famvflexlay</h5>
+
+<pre><code>var FlexibleLayout = require('famous/views/FlexibleLayout');
+</code></pre>
+
+<h5>
+<a name="famvseqlay" class="anchor" href="#famvseqlay"><span class="octicon octicon-link"></span></a>famvseqlay</h5>
+
+<pre><code>var SequentialLayout = require('famous/views/SequentialLayout');
+</code></pre>
+
+<h5>
+<a name="famvflipper" class="anchor" href="#famvflipper"><span class="octicon octicon-link"></span></a>famvflipper</h5>
+
+<pre><code>var Flipper = require('famous/views/Flipper');
+</code></pre>
+
+<h5>
+<a name="famvddeck" class="anchor" href="#famvddeck"><span class="octicon octicon-link"></span></a>famvddeck</h5>
+
+<pre><code>var Deck = require('famous/views/Deck');
+</code></pre>
+
+<h5>
+<a name="famvgenericsync" class="anchor" href="#famvgenericsync"><span class="octicon octicon-link"></span></a>famvgenericsync</h5>
+
+<pre><code>var GenericSync = require('famous/inputs/GenericSync');
+</code></pre>
+
+<h5>
+<a name="famvmousesync" class="anchor" href="#famvmousesync"><span class="octicon octicon-link"></span></a>famvmousesync</h5>
+
+<pre><code>var MouseSync = require('famous/inputs/MouseSync');
+</code></pre>
+
+<h5>
+<a name="famvtouchsync" class="anchor" href="#famvtouchsync"><span class="octicon octicon-link"></span></a>famvtouchsync</h5>
+
+<pre><code>var TouchSync = require('famous/inputs/TouchSync');
+</code></pre>
+
+<h5>
+<a name="famvscrollsync" class="anchor" href="#famvscrollsync"><span class="octicon octicon-link"></span></a>famvscrollsync</h5>
+
+<pre><code>var ScrollSync = require('famous/inputs/ScrollSync');
+</code></pre>
+
+<h5>
+<a name="famgenericsync" class="anchor" href="#famgenericsync"><span class="octicon octicon-link"></span></a>famgenericsync</h5>
+
+<pre><code>GenericSync.register({
+    'mouse': MouseSync,
+    'touch': TouchSync,
+    'scroll': ScrollSync
+});
+</code></pre>
+
+<h5>
+<a name="famnsurface" class="anchor" href="#famnsurface"><span class="octicon octicon-link"></span></a>famnsurface</h5>
+
+<pre><code>var $1 = new Surface({
+    size: [undefined, undefined],
+    content: '',
+    classes: [],
+    properties: {
+        color: 'white',
+        textAlign: 'center',
+        backgroundColor: '#FA5C4F'
+    }
+});
+</code></pre>
+
+<h5>
+<a name="famnimagesurface" class="anchor" href="#famnimagesurface"><span class="octicon octicon-link"></span></a>famnimagesurface</h5>
+
+<pre><code>var $1 = new ImageSurface({
+    size: [true, true],
+    content: '/*url*/'
+});
+</code></pre>
+
+<h5>
+<a name="famninputsurface" class="anchor" href="#famninputsurface"><span class="octicon octicon-link"></span></a>famninputsurface</h5>
+
+<pre><code>var $1 = new InputSurface({
+    size: [200, 100],
+    placeholder: '',
+    type: 'text' // or 'button'
+});
+</code></pre>
+
+<h5>
+<a name="famnstatemodifier" class="anchor" href="#famnstatemodifier"><span class="octicon octicon-link"></span></a>famnstatemodifier</h5>
+
+<pre><code>var $1 = new StateModifier({
+  align: [0, 0],
+  origin: [0, 0],
+  transform: Transform.translate(0, 0, 0)
+});
+</code></pre>
+
+<h5>
+<a name="famnhflay" class="anchor" href="#famnhflay"><span class="octicon octicon-link"></span></a>famnhflay</h5>
+
+<pre><code>/* NEEDS EDITING */
+var $1 = new HeaderFooterLayout({
+    headerSize: $2,
+    footerSize: $3
+});
+
+$1.header.add();
+$1.content.add();
+$1.footer.add();
+
+//mainContext.add($1);
+</code></pre>
+
+<h5>
+<a name="famngridlay" class="anchor" href="#famngridlay"><span class="octicon octicon-link"></span></a>famngridlay</h5>
+
+<pre><code>/* NEEDS EDITING */
+var $1 = new GridLayout({
+  dimensions: [$2, $3]
+});
+
+var surfaces = [];
+// surfaces.push(new Surface());
+$1.sequenceFrom(surfaces);
+
+//mainContext.add($1);
+</code></pre>
+
+<h5>
+<a name="famnflexlay" class="anchor" href="#famnflexlay"><span class="octicon octicon-link"></span></a>famnflexlay</h5>
+
+<pre><code>/* NEEDS EDITING */
+var ratios = [1, 3, 5];
+var $1 = new FlexibleLayout({
+    ratios: ratios
+});
+
+var surfaces = [];
+// surfaces.push(new Surface());
+$1.sequenceFrom(surfaces);
+
+//mainContext.add($1);
+</code></pre>
+
+<h5>
+<a name="famnseqlay" class="anchor" href="#famnseqlay"><span class="octicon octicon-link"></span></a>famnseqlay</h5>
+
+<pre><code>/* NEEDS EDITING */
+var $1 = new SequentialLayout({
+    direction: 0
+});
+var surfaces = [];
+$1.sequenceFrom(surfaces);
+// surfaces.push(new Surface());
+// mainContext.add($1);
+</code></pre>
+
+<h5>
+<a name="famndeck" class="anchor" href="#famndeck"><span class="octicon octicon-link"></span></a>famndeck</h5>
+
+<pre><code>/* NEEDS EDITING */
+var $1 = new Deck({
+    itemSpacing: 10,
+    transition: {
+        method: 'spring',
+        period: 300,
+        dampingRatio: 0.5
+    },
+    stackRotation: 0.02
+});
+var surfaces = [];
+$1.sequenceFrom(surfaces);
+// surfaces.push(new Surface());
+// mainContext.add($1);
+</code></pre>
+
+<h5>
+<a name="famnrendernode" class="anchor" href="#famnrendernode"><span class="octicon octicon-link"></span></a>famnrendernode</h5>
+
+<pre><code>/* NEEDS EDITING */
+// var surf = new Surface();
+// var mod = new StateModifier();
+
+var $1 = new RenderNode(mod);
+$1.add(surf);
+
+// $1.add(mod).add(surf);
+// mainContext.add($1);
+</code></pre>
+
+<h5>
+<a name="famtinterval" class="anchor" href="#famtinterval"><span class="octicon octicon-link"></span></a>famtinterval</h5>
+
+<pre><code>Timer.setInterval(function() {
+
+}, $1);
+</code></pre>
+
+<h5>
+<a name="famttimeout" class="anchor" href="#famttimeout"><span class="octicon octicon-link"></span></a>famttimeout</h5>
+
+<pre><code>Timer.setTimeout(function() {
+
+}, $1);
+</code></pre>
+
+<h5>
+<a name="famtevery" class="anchor" href="#famtevery"><span class="octicon octicon-link"></span></a>famtevery</h5>
+
+<pre><code>Timer.every(function() {
+
+}, $1);
+</code></pre>
+
+<h5>
+<a name="famtafter" class="anchor" href="#famtafter"><span class="octicon octicon-link"></span></a>famtafter</h5>
+
+<pre><code>Timer.after(function() {
+
+}, $1);
+</code></pre>
+
+<h5>
+<a name="famkeycodes" class="anchor" href="#famkeycodes"><span class="octicon octicon-link"></span></a>famkeycodes</h5>
+
+<pre><code>Engine.on('keypress', function(event) {
+if (event.charCode &gt;= KeyCodes['0'] &amp;&amp; event.charCode &lt;= KeyCodes['9']) {
+    console.log('you hit a number');
+} else {
+    console.log('not a number');
+}
+</code></pre>
+
+<h5>
+<a name="famtransition" class="anchor" href="#famtransition"><span class="octicon octicon-link"></span></a>famtransition</h5>
+
+<pre><code>{ duration : $1, curve: Easing.linear }
+</code></pre>
+
+<h5>
+<a name="fameswipe" class="anchor" href="#fameswipe"><span class="octicon octicon-link"></span></a>fameswipe</h5>
+
+<pre><code>/* !ONLY FOR EXAMPLE PURPOSE! */
+var GenericSync     = require('famous/inputs/GenericSync');
+var MouseSync       = require('famous/inputs/MouseSync');
+var TouchSync       = require('famous/inputs/TouchSync');
+GenericSync.register({'mouse': MouseSync, 'touch': TouchSync});
+
+var options = {
+    openPosition: -276,
+    transition: {
+        duration: 300,
+        curve: 'easeOut'
+    },
+    posThreshold: 138,
+    velThreshold: 0.50
+};
+
+var currentPos = new Transitionable([0, 0]);
+
+var sync = new GenericSync(['mouse', 'touch'], {
+    direction: GenericSync.DIRECTION_X
+});
+surf.pipe(sync);
+
+function _handleSwipe() {
+    sync.on('update', function (data) {
+        var currentPosition = contentPos.get();
+        contentPos.set(currentPosition + data.delta);
+    }.bind(this));
+
+    sync.on('end', (function (data) {
+        var velocity = data.velocity;
+        var position = contentPos.get();
+
+        if(contentPos.get() &gt; this.options.posThreshold) {
+            if(velocity &lt; -this.options.velThreshold) {
+                this.slideLeft();
+            } else {
+                this.slideRight();
+            }
+        } else {
+            if(velocity &gt; this.options.velThreshold) {
+                this.slideRight();
+            } else {
+                this.slideLeft();
+            }
+        }
+    }).bind(this));
+}
+
+AppView.prototype.slideLeft = function() {
+    this.pageViewPos.set(0, this.options.transition, function() {
+
+    }.bind(this));
+};
+
+AppView.prototype.slideRight = function() {
+    this.pageViewPos.set(this.options.openPosition, this.options.transition, function() {
+
+    }.bind(this));
+};
+</code></pre>
+
+<h5>
+<a name="famboilerplate" class="anchor" href="#famboilerplate"><span class="octicon octicon-link"></span></a>famboilerplate</h5>
+
+<pre><code>define(function(require, exports, module) {
+    // import dependencies
+    var Engine = require('famous/core/Engine');
+    var Modifier = require('famous/core/Modifier');
+    var Transform = require('famous/core/Transform');
+    var ImageSurface = require('famous/surfaces/ImageSurface');
+
+    // create the main context
+    var mainContext = Engine.createContext();
+
+    // your app here
+    var logo = new ImageSurface({
+        size: [200, 200],
+        content: 'http://code.famo.us/assets/famous_logo.svg',
+        //classes: ['double-sided']
+        properties: {
+            '-webkit-backface-visibility': 'visible',
+            'backface-visibility': 'visible'
+        }
+    });
+
+    var initialTime = Date.now();
+    var centerSpinModifier = new Modifier({
+        origin: [0.5, 0.5],
+        transform : function(){
+            return Transform.rotateY(.002 * (Date.now() - initialTime));
+        }
+    });
+
+    mainContext.add(centerSpinModifier).add(logo);
+});
+</code></pre>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/sun2rise" class="avatar"><img src="https://avatars2.githubusercontent.com/u/3852307?v=2&amp;s=60" width="48" height="48"></a> <a href="https://github.com/sun2rise">sun2rise</a> maintains <a href="https://github.com/sun2rise/famous-atom">Famous-atom</a></p>
+
+
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="http://pages.github.com/">GitHub Pages</a><br>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/sun2rise/famous-atom/tarball/master" class="tar">tar</a><a href="https://github.com/sun2rise/famous-atom/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-52420722-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+</body>
+</html>
