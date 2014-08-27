@@ -329,7 +329,6 @@
 		var logo = new ImageSurface({
 			size: [200, 200],
 			content: 'http://code.famo.us/assets/famous_logo.svg',
-			//classes: ['double-sided']
 			properties: {
 				'-webkit-backface-visibility': 'visible',
 				'backface-visibility': 'visible'
