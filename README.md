@@ -5,10 +5,11 @@ Famo.us support in Atom
 
 **[famousco.de](http://famousco.de/)** - first unofficial Famo.us resource website
 
-**[famous-atom] (https://atom.io/packages/famous-atom) - Atom Packages page
+**[famous-atom] (https://atom.io/packages/famous-atom)** - Atom Packages page
 
-Adds syntax highlighting and snippets to Famo.us in Atom. <br>
 From Atom.io: File >> Settings >> Packages >> Search pakages >> "famous-atom"
+
+Adds syntax highlighting and snippets to Famo.us in Atom.
 
 ![](https://raw.githubusercontent.com/sun2rise/famous-atom/master/screenshots/famous-atom.gif)
 
