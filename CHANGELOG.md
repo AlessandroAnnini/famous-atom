@@ -1,4 +1,25 @@
-### Prepare 2.3.0 release (HEAD, master)
+### Prepare 2.3.1 release (HEAD, master)
+>Fri, 29 Aug 2014 16:55:13 +0200
+
+>Author: Alessandro (alessandro.annini@gmail.com)
+
+>Commiter: Alessandro (alessandro.annini@gmail.com)
+
+
+
+
+### New screenshot (origin/master, origin/HEAD)
+>Fri, 29 Aug 2014 16:54:53 +0200
+
+>Author: Alessandro (alessandro.annini@gmail.com)
+
+>Commiter: Alessandro (alessandro.annini@gmail.com)
+
+added demo gif for famnview, new view snippet
+
+
+
+### Prepare 2.3.0 release (tag: v2.3.0)
 >Fri, 29 Aug 2014 16:33:10 +0200
 
 >Author: Alessandro (alessandro.annini@gmail.com)
@@ -8,7 +29,7 @@
 
 
 
-### test2 (origin/master, origin/HEAD)
+### test2
 >Fri, 29 Aug 2014 16:32:31 +0200
 
 >Author: Alessandro (alessandro.annini@gmail.com)
