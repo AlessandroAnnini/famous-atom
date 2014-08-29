@@ -337,6 +337,11 @@ var Flipper = require('famous/views/Flipper');
 var Deck = require('famous/views/Deck');
 ```
 
+#### famvtimer
+```
+var Timer = require('famous/utilities/Timer');
+```
+
 ##### famvgenericsync
 
 ```
@@ -383,6 +388,36 @@ var $1 = new Surface({
         textAlign: 'center',
         backgroundColor: '#FA5C4F'
     }
+});
+```
+#### famnview
+```
+define(function(require, exports, module) {
+    var View = require('famous/core/View');
+    var Engine = require('famous/core/Engine');
+    var Surface = require('famous/core/Surface');
+    var Transform = require('famous/core/Transform');
+    var RenderNode = require('famous/core/RenderNode');
+    var StateModifier = require('famous/modifiers/StateModifier');
+
+    $1.prototype = Object.create(View.prototype);
+    $1.prototype.constructor = $1;
+
+    $1.DEFAULT_OPTIONS = {
+
+    };
+
+    function $1(options) {
+        View.apply(this, arguments);
+
+        this._node = new RenderNode();
+        this._node.add(new StateModifier()).add(new Surface());
+
+        // -- ADD TO RENDER TREE
+        this._add(this.nodeRoot);
+    }
+
+    module.exports = $1;
 });
 ```
 
