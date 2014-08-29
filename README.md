@@ -13,6 +13,8 @@ Adds syntax highlighting and snippets to Famo.us in Atom.
 
 ![](https://raw.githubusercontent.com/sun2rise/famous-atom/master/screenshots/famous-atom.gif)
 
+![](https://raw.githubusercontent.com/sun2rise/famous-atom/master/screenshots/famnview.gif)
+
 Contributions are greatly appreciated. Please fork this repository and open a pull request to add snippets, make grammar tweaks, etc.
 
 Supported features
