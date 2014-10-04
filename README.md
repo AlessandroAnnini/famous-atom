@@ -1,4 +1,4 @@
-Famo.us support in Atom
+Famo.us support in Atom by http://famousco.de/
 =======================
 
 **[famo.us](http://famo.us/)** - official website
@@ -219,6 +219,59 @@ famousBox.js fast but unofficial and UNSUPPORTED scaffolding (use this only for 
     </head>
     <body></body>
 </html>
+
+```
+
+#### JADE
+
+##### famjsca
+
+Famo.us JADE scaffolding
+
+```
+html
+  head
+    title famo.us App
+    meta(name='viewport', content='width=device-width, maximum-scale=1, user-scalable=no')
+    meta(name='mobile-web-app-capable', content='yes')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style', content='black')
+    script(type='text/javascript', src='http://code.famo.us/lib/functionPrototypeBind.js')
+    script(type='text/javascript', src='http://code.famo.us/lib/classList.js')
+    script(type='text/javascript', src='http://code.famo.us/lib/requestAnimationFrame.js')
+    script(type='text/javascript', src='http://code.famo.us/lib/require.js')
+    link(rel='stylesheet', type='text/css', href='http://code.famo.us/famous/0.2.0/famous.css')
+    script(type='text/javascript', src='http://code.famo.us/famous/0.2.0/famous.min.js')
+    link(rel='stylesheet', type='text/css', href='css/app.css')
+    script(type='text/javascript')
+      require.config({baseUrl: 'src/'});
+      require(['main']);
+  body
+
+```
+
+##### famjbox
+
+famousBox.js fast but unofficial and UNSUPPORTED scaffolding (use this only for test apps) see http://famousco.de/how-to/ for details.
+
+```
+html
+  head
+    title famo.us App
+    meta(name='viewport', content='width=device-width, maximum-scale=1, user-scalable=no')
+    meta(name='mobile-web-app-capable', content='yes')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style', content='black')
+    
+    // http://famousco.de/ all-in-one famous lib 
+       script(type='text/javascript', src='famousBox.js')
+       
+    // your css 
+    // <link rel="stylesheet" type="text/css" href="style.css" /> 
+       
+    // your app 
+       <script type="text/javascript" src="main.js"></script> 
+  body
 
 ```
 
