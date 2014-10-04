@@ -1,4 +1,4 @@
-'.text.html .meta.tag:not(.entity.other.attribute-name, .punctuation.definition.tag.begin, .entity.name.tag, .string, .invalid.illegal.incomplete.html)':
+'.text.html':
   'editor':
     'completions': [
       'famsca'

@@ -1,4 +1,4 @@
-'.source.jade'
+'.source.jade':
   'editor':
     'completions': [
       'famjsca'
