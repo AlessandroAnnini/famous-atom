@@ -1,4 +1,4 @@
-".source.jade":
+".text.jade:not(.meta.tag)":
   "famous scaffold":
     "prefix": "famsca"
     "body": """
