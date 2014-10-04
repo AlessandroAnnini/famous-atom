@@ -4,3 +4,9 @@
       'famsca'
       'fambox'
     ]
+'.source.jade':
+  'editor':
+    'completions': [
+      'famjsca'
+      'famjbox'
+    ]
