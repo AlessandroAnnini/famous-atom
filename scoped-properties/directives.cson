@@ -3,8 +3,8 @@
     'completions': [
       'famsca'
       'fambox'
-    ]
-'.source.jade':
+    ],
+'.text.jade':
   'editor':
     'completions': [
       'famjsca'
