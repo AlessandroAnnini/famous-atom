@@ -3,10 +3,4 @@
     'completions': [
       'famsca'
       'fambox'
-    ],
-'.text.jade':
-  'editor':
-    'completions': [
-      'famjsca'
-      'famjbox'
     ]

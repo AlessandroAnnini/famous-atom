@@ -1,0 +1,6 @@
+'.text.jade':
+  'editor':
+    'completions': [
+      'famjsca'
+      'famjbox'
+    ]
