@@ -1,4 +1,4 @@
-".source.jade"
+".source.jade":
 "famous jade scaffold":
   "prefix": "famjsca"
   "body": """
