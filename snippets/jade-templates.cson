@@ -1,7 +1,7 @@
 ".source.jade"
 "famous jade scaffold":
-    "prefix": "famjsca"
-    "body": """
+  "prefix": "famjsca"
+  "body": """
 html
   head
     title famo.us App
@@ -24,8 +24,8 @@ html
 
 """
 "famousbox":
-    "prefix": "famjbox"
-    "body": """
+  "prefix": "famjbox"
+  "body": """
 html
   head
     title famo.us App
@@ -46,4 +46,3 @@ html
 
 
 """
-
