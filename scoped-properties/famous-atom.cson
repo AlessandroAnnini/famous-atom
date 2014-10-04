@@ -165,3 +165,9 @@
 		'fameswipe'
 		'famboilerplate'
     ]
+'.source.jade':
+  'editor':
+    'completions': [
+      'famjsca'
+      'famjbox'
+    ]

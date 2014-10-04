@@ -1,4 +1,4 @@
-".text.jade:not(.meta.tag)":
+".source.jade":
 "famous jade scaffold":
     "prefix": "famjsca"
     "body": """
@@ -22,8 +22,8 @@ html
   body
 
 
-    """
-  "famousbox":
+"""
+"famousbox":
     "prefix": "famjbox"
     "body": """
 html
@@ -45,5 +45,5 @@ html
   body
 
 
-    """
+"""
 
