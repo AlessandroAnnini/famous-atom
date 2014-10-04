@@ -1,63 +1,60 @@
 ".text.html:not(.meta.tag)":
-"famous scaffold":
-    "prefix": "famsca"
+  "famous scaffold":
+  "prefix": "famsca"
     "body": """
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <title>famo.us App</title>
-        <meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no" />
-        <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <!DOCTYPE HTML>
+        <html>
+            <head>
+                <title>famo.us App</title>
+                <meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no" />
+                <meta name="mobile-web-app-capable" content="yes" />
+                <meta name="apple-mobile-web-app-capable" content="yes" />
+                <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
-        <!-- shims for backwards compatibility -->
-        <script type="text/javascript" src="http://code.famo.us/lib/functionPrototypeBind.js"></script>
-        <script type="text/javascript" src="http://code.famo.us/lib/classList.js"></script>
-        <script type="text/javascript" src="http://code.famo.us/lib/requestAnimationFrame.js"></script>
+                <!-- shims for backwards compatibility -->
+                <script type="text/javascript" src="http://code.famo.us/lib/functionPrototypeBind.js"></script>
+                <script type="text/javascript" src="http://code.famo.us/lib/classList.js"></script>
+                <script type="text/javascript" src="http://code.famo.us/lib/requestAnimationFrame.js"></script>
 
-        <!-- module loader -->
-        <script type="text/javascript" src="http://code.famo.us/lib/require.js"></script>
+                <!-- module loader -->
+                <script type="text/javascript" src="http://code.famo.us/lib/require.js"></script>
 
-        <!-- famous -->
-        <link rel="stylesheet" type="text/css" href="http://code.famo.us/famous/0.2.0/famous.css" />
-        <script type="text/javascript" src="http://code.famo.us/famous/0.2.0/famous.min.js"></script>
+                <!-- famous -->
+                <link rel="stylesheet" type="text/css" href="http://code.famo.us/famous/0.2.0/famous.css" />
+                <script type="text/javascript" src="http://code.famo.us/famous/0.2.0/famous.min.js"></script>
 
-        <!-- your css -->
-        <!-- <link rel="stylesheet" type="text/css" href="style.css" /> -->
+                <!-- your css -->
+                <!-- <link rel="stylesheet" type="text/css" href="style.css" /> -->
 
-        <!-- your app -->
-        <!-- <script type="text/javascript" src="main.js"></script> -->
+                <!-- your app -->
+                <!-- <script type="text/javascript" src="main.js"></script> -->
 
-    </head>
-    <body></body>
-</html>
-
+            </head>
+            <body></body>
+        </html>
     """
-"famousbox":
-    "prefix": "fambox"
+  "famousbox":
+  "prefix": "fambox"
     "body": """
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <title>famo.us App</title>
-        <meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no" />
-        <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <!DOCTYPE HTML>
+        <html>
+            <head>
+                <title>famo.us App</title>
+                <meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no" />
+                <meta name="mobile-web-app-capable" content="yes" />
+                <meta name="apple-mobile-web-app-capable" content="yes" />
+                <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
-        <!-- http://famousco.de/ all-in-one famous lib -->
-        <script type="text/javascript" src="famousBox.js"></script>
+                <!-- http://famousco.de/ all-in-one famous lib -->
+                <script type="text/javascript" src="famousBox.js"></script>
 
-        <!-- your css -->
-        <!-- <link rel="stylesheet" type="text/css" href="style.css" /> -->
+                <!-- your css -->
+                <!-- <link rel="stylesheet" type="text/css" href="style.css" /> -->
 
-        <!-- your app -->
-        <!-- <script type="text/javascript" src="main.js"></script> -->
+                <!-- your app -->
+                <!-- <script type="text/javascript" src="main.js"></script> -->
 
-    </head>
-    <body></body>
-</html>
-
+            </head>
+            <body></body>
+        </html>
     """
-  

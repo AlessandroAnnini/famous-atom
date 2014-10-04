@@ -1,4 +1,4 @@
-'.text.html .text.jade .meta.tag:not(.entity.other.attribute-name, .punctuation.definition.tag.begin, .source, .entity.name.tag, .string, .invalid.illegal.incomplete.html)':
+'.text.html .source.jade .meta.tag:not(.entity.other.attribute-name, .punctuation.definition.tag.begin, .entity.name.tag, .string, .invalid.illegal.incomplete.html)':
   'editor':
     'completions': [
       'famsca'
