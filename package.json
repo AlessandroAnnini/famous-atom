@@ -1,7 +1,7 @@
 {
   "name": "famous-atom",
   "main": "./lib/famous-atom",
-  "version": "2.4.17",
+  "version": "2.4.18",
   "description": "Make easy and fast to use Famo.us",
   "homepage": "http://famousco.de/",
   "keywords": [
