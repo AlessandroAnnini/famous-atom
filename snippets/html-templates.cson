@@ -1,6 +1,6 @@
 ".text.html:not(.meta.tag)":
   "famous scaffold":
-  "prefix": "famsca"
+    "prefix": "famsca"
     "body": """
         <!DOCTYPE HTML>
         <html>
@@ -34,7 +34,7 @@
         </html>
     """
   "famousbox":
-  "prefix": "fambox"
+    "prefix": "fambox"
     "body": """
         <!DOCTYPE HTML>
         <html>

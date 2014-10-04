@@ -1,6 +1,6 @@
-".text.jade:not(.meta.tag)":
+".source.jade":
   "famous scaffold":
-  "prefix": "famsca"
+    "prefix": "famsca"
     "body": """
       html
         head
@@ -22,7 +22,7 @@
         body
     """
   "famousbox":
-  "prefix": "famjbox"
+    "prefix": "famjbox"
     "body": """
       html
         head
