@@ -1,4 +1,4 @@
-'.text.jade':
+'.text.plain':
   'editor':
     'completions': [
       'famjsca'
