@@ -1,5 +1,5 @@
 Famo.us support in Atom by http://famousco.de/
-=======================
+==============================================
 
 **[famo.us](http://famo.us/)** - official website
 
@@ -262,15 +262,15 @@ html
     meta(name='mobile-web-app-capable', content='yes')
     meta(name='apple-mobile-web-app-capable', content='yes')
     meta(name='apple-mobile-web-app-status-bar-style', content='black')
-    
-    // http://famousco.de/ all-in-one famous lib 
+
+    // http://famousco.de/ all-in-one famous lib
        script(type='text/javascript', src='famousBox.js')
-       
-    // your css 
-    // <link rel="stylesheet" type="text/css" href="style.css" /> 
-       
-    // your app 
-       <script type="text/javascript" src="main.js"></script> 
+
+    // your css
+    // <link rel="stylesheet" type="text/css" href="style.css" />
+
+    // your app
+       <script type="text/javascript" src="main.js"></script>
   body
 
 ```

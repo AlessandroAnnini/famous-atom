@@ -1,4 +1,539 @@
-### Prepare 2.3.1 release (HEAD, master)
+### Bugfix (HEAD, master)
+>Mon, 6 Oct 2014 09:37:59 +0200
+
+>Author: Alessandro (sunrising@Alessandros-MacBook-Pro.local)
+
+>Commiter: Alessandro (sunrising@Alessandros-MacBook-Pro.local)
+
+- jade now working with the atom-jade package installed too
+- updated README.md
+
+
+
+### Prepare 2.4.26 release (tag: v2.4.26, origin/master, origin/HEAD)
+>Mon, 6 Oct 2014 09:26:16 +0200
+
+>Author: Alessandro (sunrising@Alessandros-MacBook-Pro.local)
+
+>Commiter: Alessandro (sunrising@Alessandros-MacBook-Pro.local)
+
+
+
+
+### update
+>Mon, 6 Oct 2014 09:25:44 +0200
+
+>Author: Alessandro (sunrising@Alessandros-MacBook-Pro.local)
+
+>Commiter: Alessandro (sunrising@Alessandros-MacBook-Pro.local)
+
+
+
+
+### Prepare 2.4.25 release (tag: v2.4.25)
+>Mon, 6 Oct 2014 09:22:41 +0200
+
+>Author: Alessandro (sunrising@Alessandros-MacBook-Pro.local)
+
+>Commiter: Alessandro (sunrising@Alessandros-MacBook-Pro.local)
+
+
+
+
+### update
+>Mon, 6 Oct 2014 09:22:14 +0200
+
+>Author: Alessandro (sunrising@Alessandros-MacBook-Pro.local)
+
+>Commiter: Alessandro (sunrising@Alessandros-MacBook-Pro.local)
+
+
+
+
+### Prepare 2.4.24 release (tag: v2.4.24)
+>Mon, 6 Oct 2014 01:23:06 +0200
+
+>Author: Alessandro (sunrising@alessandros-mbp.lan)
+
+>Commiter: Alessandro (sunrising@alessandros-mbp.lan)
+
+
+
+
+### Prepare 2.4.23 release (tag: v2.4.23)
+>Mon, 6 Oct 2014 01:22:43 +0200
+
+>Author: Alessandro (sunrising@alessandros-mbp.lan)
+
+>Commiter: Alessandro (sunrising@alessandros-mbp.lan)
+
+
+
+
+### Prepare 2.4.22 release (tag: v2.4.22)
+>Mon, 6 Oct 2014 01:22:04 +0200
+
+>Author: Alessandro (sunrising@alessandros-mbp.lan)
+
+>Commiter: Alessandro (sunrising@alessandros-mbp.lan)
+
+
+
+
+### update
+>Mon, 6 Oct 2014 01:21:38 +0200
+
+>Author: Alessandro (sunrising@alessandros-mbp.lan)
+
+>Commiter: Alessandro (sunrising@alessandros-mbp.lan)
+
+
+
+
+### Prepare 2.4.21 release (tag: v2.4.21)
+>Sun, 5 Oct 2014 22:33:18 +0200
+
+>Author: Alessandro (sunrising@alessandros-mbp.lan)
+
+>Commiter: Alessandro (sunrising@alessandros-mbp.lan)
+
+
+
+
+### update
+>Sun, 5 Oct 2014 22:32:56 +0200
+
+>Author: Alessandro (sunrising@alessandros-mbp.lan)
+
+>Commiter: Alessandro (sunrising@alessandros-mbp.lan)
+
+
+
+
+### Prepare 2.4.20 release (tag: v2.4.20)
+>Sun, 5 Oct 2014 22:24:36 +0200
+
+>Author: Alessandro (sunrising@alessandros-mbp.lan)
+
+>Commiter: Alessandro (sunrising@alessandros-mbp.lan)
+
+
+
+
+### update
+>Sun, 5 Oct 2014 22:24:05 +0200
+
+>Author: Alessandro (sunrising@alessandros-mbp.lan)
+
+>Commiter: Alessandro (sunrising@alessandros-mbp.lan)
+
+
+
+
+### Prepare 2.4.19 release (tag: v2.4.19)
+>Sat, 4 Oct 2014 17:43:02 +0200
+
+>Author: Alessandro (sunrising@alessandros-mbp.lan)
+
+>Commiter: Alessandro (sunrising@alessandros-mbp.lan)
+
+
+
+
+### update
+>Sat, 4 Oct 2014 17:42:54 +0200
+
+>Author: Alessandro (sunrising@alessandros-mbp.lan)
+
+>Commiter: Alessandro (sunrising@alessandros-mbp.lan)
+
+
+
+
+### Prepare 2.4.18 release (tag: v2.4.18)
+>Sat, 4 Oct 2014 17:41:15 +0200
+
+>Author: Alessandro (sunrising@alessandros-mbp.lan)
+
+>Commiter: Alessandro (sunrising@alessandros-mbp.lan)
+
+
+
+
+### update
+>Sat, 4 Oct 2014 17:41:07 +0200
+
+>Author: Alessandro (sunrising@alessandros-mbp.lan)
+
+>Commiter: Alessandro (sunrising@alessandros-mbp.lan)
+
+
+
+
+### Prepare 2.4.17 release (tag: v2.4.17)
+>Sat, 4 Oct 2014 17:37:20 +0200
+
+>Author: Alessandro (sunrising@alessandros-mbp.lan)
+
+>Commiter: Alessandro (sunrising@alessandros-mbp.lan)
+
+
+
+
+### update
+>Sat, 4 Oct 2014 17:37:12 +0200
+
+>Author: Alessandro (sunrising@alessandros-mbp.lan)
+
+>Commiter: Alessandro (sunrising@alessandros-mbp.lan)
+
+
+
+
+### Prepare 2.4.16 release (tag: v2.4.16)
+>Sat, 4 Oct 2014 17:35:28 +0200
+
+>Author: Alessandro (sunrising@alessandros-mbp.lan)
+
+>Commiter: Alessandro (sunrising@alessandros-mbp.lan)
+
+
+
+
+### update
+>Sat, 4 Oct 2014 17:35:18 +0200
+
+>Author: Alessandro (sunrising@alessandros-mbp.lan)
+
+>Commiter: Alessandro (sunrising@alessandros-mbp.lan)
+
+
+
+
+### Prepare 2.4.15 release (tag: v2.4.15)
+>Sat, 4 Oct 2014 17:31:59 +0200
+
+>Author: Alessandro (sunrising@alessandros-mbp.lan)
+
+>Commiter: Alessandro (sunrising@alessandros-mbp.lan)
+
+
+
+
+### update
+>Sat, 4 Oct 2014 17:31:50 +0200
+
+>Author: Alessandro (sunrising@alessandros-mbp.lan)
+
+>Commiter: Alessandro (sunrising@alessandros-mbp.lan)
+
+
+
+
+### Prepare 2.4.14 release (tag: v2.4.14)
+>Sat, 4 Oct 2014 17:25:56 +0200
+
+>Author: Alessandro (sunrising@alessandros-mbp.lan)
+
+>Commiter: Alessandro (sunrising@alessandros-mbp.lan)
+
+
+
+
+### update
+>Sat, 4 Oct 2014 17:25:48 +0200
+
+>Author: Alessandro (sunrising@alessandros-mbp.lan)
+
+>Commiter: Alessandro (sunrising@alessandros-mbp.lan)
+
+
+
+
+### Prepare 2.4.13 release (tag: v2.4.13)
+>Sat, 4 Oct 2014 17:18:08 +0200
+
+>Author: Alessandro (sunrising@alessandros-mbp.lan)
+
+>Commiter: Alessandro (sunrising@alessandros-mbp.lan)
+
+
+
+
+### update
+>Sat, 4 Oct 2014 17:17:58 +0200
+
+>Author: Alessandro (sunrising@alessandros-mbp.lan)
+
+>Commiter: Alessandro (sunrising@alessandros-mbp.lan)
+
+
+
+
+### Prepare 2.4.12 release (tag: v2.4.12)
+>Sat, 4 Oct 2014 17:15:41 +0200
+
+>Author: Alessandro (sunrising@alessandros-mbp.lan)
+
+>Commiter: Alessandro (sunrising@alessandros-mbp.lan)
+
+
+
+
+### update
+>Sat, 4 Oct 2014 17:15:33 +0200
+
+>Author: Alessandro (sunrising@alessandros-mbp.lan)
+
+>Commiter: Alessandro (sunrising@alessandros-mbp.lan)
+
+
+
+
+### Prepare 2.4.11 release (tag: v2.4.11)
+>Sat, 4 Oct 2014 16:59:18 +0200
+
+>Author: Alessandro (sunrising@alessandros-mbp.lan)
+
+>Commiter: Alessandro (sunrising@alessandros-mbp.lan)
+
+
+
+
+### updates
+>Sat, 4 Oct 2014 16:58:56 +0200
+
+>Author: Alessandro (sunrising@alessandros-mbp.lan)
+
+>Commiter: Alessandro (sunrising@alessandros-mbp.lan)
+
+
+
+
+### Prepare 2.4.10 release (tag: v2.4.10)
+>Sat, 4 Oct 2014 16:42:08 +0200
+
+>Author: Alessandro (sunrising@alessandros-mbp.lan)
+
+>Commiter: Alessandro (sunrising@alessandros-mbp.lan)
+
+
+
+
+### updates
+>Sat, 4 Oct 2014 16:41:42 +0200
+
+>Author: Alessandro (sunrising@alessandros-mbp.lan)
+
+>Commiter: Alessandro (sunrising@alessandros-mbp.lan)
+
+
+
+
+### Prepare 2.4.9 release (tag: v2.4.9)
+>Sat, 4 Oct 2014 16:33:52 +0200
+
+>Author: Alessandro (sunrising@alessandros-mbp.lan)
+
+>Commiter: Alessandro (sunrising@alessandros-mbp.lan)
+
+
+
+
+### update
+>Sat, 4 Oct 2014 16:33:21 +0200
+
+>Author: Alessandro (sunrising@alessandros-mbp.lan)
+
+>Commiter: Alessandro (sunrising@alessandros-mbp.lan)
+
+
+
+
+### Prepare 2.4.8 release (tag: v2.4.8)
+>Sat, 4 Oct 2014 15:56:03 +0200
+
+>Author: Alessandro (root@alessandros-mbp.lan)
+
+>Commiter: Alessandro (root@alessandros-mbp.lan)
+
+
+
+
+### update
+>Sat, 4 Oct 2014 15:55:49 +0200
+
+>Author: Alessandro (sunrising@alessandros-mbp.lan)
+
+>Commiter: Alessandro (sunrising@alessandros-mbp.lan)
+
+indentation
+
+
+
+### Prepare 2.4.7 release (tag: v2.4.7)
+>Sat, 4 Oct 2014 15:25:14 +0200
+
+>Author: Alessandro (root@alessandros-mbp.lan)
+
+>Commiter: Alessandro (root@alessandros-mbp.lan)
+
+
+
+
+### update
+>Sat, 4 Oct 2014 15:25:06 +0200
+
+>Author: Alessandro (sunrising@alessandros-mbp.lan)
+
+>Commiter: Alessandro (sunrising@alessandros-mbp.lan)
+
+
+
+
+### Prepare 2.4.6 release (tag: v2.4.6)
+>Sat, 4 Oct 2014 15:21:17 +0200
+
+>Author: Alessandro (root@alessandros-mbp.lan)
+
+>Commiter: Alessandro (root@alessandros-mbp.lan)
+
+
+
+
+### update
+>Sat, 4 Oct 2014 15:21:07 +0200
+
+>Author: Alessandro (sunrising@alessandros-mbp.lan)
+
+>Commiter: Alessandro (sunrising@alessandros-mbp.lan)
+
+
+
+
+### Prepare 2.4.5 release (tag: v2.4.5)
+>Sat, 4 Oct 2014 15:17:58 +0200
+
+>Author: Alessandro (root@alessandros-mbp.lan)
+
+>Commiter: Alessandro (root@alessandros-mbp.lan)
+
+
+
+
+### update
+>Sat, 4 Oct 2014 15:17:46 +0200
+
+>Author: Alessandro (sunrising@alessandros-mbp.lan)
+
+>Commiter: Alessandro (sunrising@alessandros-mbp.lan)
+
+
+
+
+### Prepare 2.4.4 release (tag: v2.4.4)
+>Sat, 4 Oct 2014 15:06:30 +0200
+
+>Author: Alessandro (root@alessandros-mbp.lan)
+
+>Commiter: Alessandro (root@alessandros-mbp.lan)
+
+
+
+
+### Prepare 2.4.3 release
+>Sat, 4 Oct 2014 15:06:00 +0200
+
+>Author: Alessandro (root@alessandros-mbp.lan)
+
+>Commiter: Alessandro (root@alessandros-mbp.lan)
+
+
+
+
+### update
+>Sat, 4 Oct 2014 15:05:38 +0200
+
+>Author: Alessandro (sunrising@alessandros-mbp.lan)
+
+>Commiter: Alessandro (sunrising@alessandros-mbp.lan)
+
+
+
+
+### Prepare 2.4.2 release (tag: v2.4.2)
+>Sat, 4 Oct 2014 14:48:32 +0200
+
+>Author: Alessandro (root@alessandros-mbp.lan)
+
+>Commiter: Alessandro (root@alessandros-mbp.lan)
+
+
+
+
+### update
+>Sat, 4 Oct 2014 14:48:05 +0200
+
+>Author: Alessandro (sunrising@alessandros-mbp.lan)
+
+>Commiter: Alessandro (sunrising@alessandros-mbp.lan)
+
+
+
+
+### Prepare 2.4.1 release (tag: v2.4.1)
+>Sat, 4 Oct 2014 14:42:58 +0200
+
+>Author: Alessandro (root@alessandros-mbp.lan)
+
+>Commiter: Alessandro (root@alessandros-mbp.lan)
+
+
+
+
+### update
+>Sat, 4 Oct 2014 14:42:37 +0200
+
+>Author: Alessandro (sunrising@alessandros-mbp.lan)
+
+>Commiter: Alessandro (sunrising@alessandros-mbp.lan)
+
+
+
+
+### Bugfix
+>Sat, 4 Oct 2014 14:36:11 +0200
+
+>Author: Alessandro (sunrising@alessandros-mbp.lan)
+
+>Commiter: Alessandro (sunrising@alessandros-mbp.lan)
+
+
+
+
+### Prepare 2.4.0 release (tag: v2.4.0)
+>Sat, 4 Oct 2014 14:06:20 +0200
+
+>Author: Alessandro (sunrising@alessandros-mbp.lan)
+
+>Commiter: Alessandro (sunrising@alessandros-mbp.lan)
+
+
+
+
+### Update
+>Sat, 4 Oct 2014 13:57:44 +0200
+
+>Author: Alessandro (sunrising@alessandros-mbp.lan)
+
+>Commiter: Alessandro (sunrising@alessandros-mbp.lan)
+
+- added support for jade with famjsca and famjbox
+- updated README
+
+
+
+### Prepare 2.3.1 release (tag: v2.3.1)
 >Fri, 29 Aug 2014 16:55:13 +0200
 
 >Author: Alessandro (alessandro.annini@gmail.com)
@@ -8,7 +543,7 @@
 
 
 
-### New screenshot (origin/master, origin/HEAD)
+### New screenshot
 >Fri, 29 Aug 2014 16:54:53 +0200
 
 >Author: Alessandro (alessandro.annini@gmail.com)
@@ -558,7 +1093,7 @@ and minor things
 
 
 
-### ver update (tag: v1.0)
+### ver update
 >Mon, 25 Aug 2014 12:51:00 +0200
 
 >Author: Alessandro (alessandro.annini@gmail.com)
