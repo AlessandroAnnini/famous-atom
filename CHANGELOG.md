@@ -1,4 +1,14 @@
-### Bugfix (HEAD, master)
+### Prepare 2.5.0 release (HEAD, master)
+>Mon, 6 Oct 2014 09:38:10 +0200
+
+>Author: Alessandro (sunrising@Alessandros-MacBook-Pro.local)
+
+>Commiter: Alessandro (sunrising@Alessandros-MacBook-Pro.local)
+
+
+
+
+### Bugfix (origin/master, origin/HEAD)
 >Mon, 6 Oct 2014 09:37:59 +0200
 
 >Author: Alessandro (sunrising@Alessandros-MacBook-Pro.local)
@@ -10,7 +20,7 @@
 
 
 
-### Prepare 2.4.26 release (tag: v2.4.26, origin/master, origin/HEAD)
+### Prepare 2.4.26 release (tag: v2.4.26)
 >Mon, 6 Oct 2014 09:26:16 +0200
 
 >Author: Alessandro (sunrising@Alessandros-MacBook-Pro.local)
