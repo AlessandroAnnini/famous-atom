@@ -1,4 +1,14 @@
-### Prepare 2.5.0 release (HEAD, master)
+### Prepare 2.6.0 release (HEAD, master)
+>Mon, 6 Oct 2014 09:38:29 +0200
+
+>Author: Alessandro (sunrising@Alessandros-MacBook-Pro.local)
+
+>Commiter: Alessandro (sunrising@Alessandros-MacBook-Pro.local)
+
+
+
+
+### Prepare 2.5.0 release (tag: v2.5.0)
 >Mon, 6 Oct 2014 09:38:10 +0200
 
 >Author: Alessandro (sunrising@Alessandros-MacBook-Pro.local)
