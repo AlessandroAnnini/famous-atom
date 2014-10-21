@@ -13,11 +13,11 @@
       'Transform'
       'View'
       'ViewSequence'
-      
+  
       'EventArbiter'
       'EventFilter'
       'EventMapper'
-      
+  
       'FastClick'
       'GenericSync'
       'MouseSync'
@@ -28,12 +28,12 @@
       'TouchSync'
       'TouchTracker'
       'TwoFingerSync'
-      
+  
       'Matrix'
       'Random'
       'Quaternion'
       'Vector'
-      
+  
       'Draggable'
       'Lift'
       'ModifierChain'
@@ -45,7 +45,7 @@
       'SubmitInputSurface'
       'TextareaSurface'
       'VideoSurface'
-      
+  
       'CachedMap'
       'Easing'
       'MultipleTransition'
@@ -55,11 +55,11 @@
       'TransitionableTransform'
       'TweenTransition'
       'WallTransition'
-      
+  
       'KeyCodes'
       'Timer'
       'Utility'
-      
+  
       'Deck'
       'EdgeSwapper'
       'Flipper'
@@ -71,11 +71,11 @@
       'Scroller'
       'Scrollview'
       'SequentialLayout'
-      
+  
       'NavigationBar'
       'TabBar'
       'ToggleButton'
-      
+  
       'click'
       'mousedown'
       'mousemove'
@@ -89,7 +89,7 @@
       'keydown'
       'keyup'
       'keypress'
-      
+  
       'Easing.inQuad'
       'Easing.outQuad'
       'Easing.inOutQuad'
@@ -120,4 +120,61 @@
       'Easing.inBounce'
       'Easing.outBounce'
       'Easing.inOutBounce'
+
+      'famvengine'
+      'famvview'
+      'famvsurface'
+      'famvimagesurface'
+      'famvinputsurface'
+      'famvstatemodifier'
+      'famvmodifier'
+      'famvscene'
+      'famvrendernode'
+      'famdfader'
+      'famvtransform'
+      'famvtransitionable'
+      'famvhflay'
+      'famvgridlay'
+      'famvflexlay'
+      'famvseqlay'
+      'famdscrollview'
+      'famdedgeswapper'
+      'famvflipper'
+      'famvdeck'
+      'famdrendercontroller'
+      'famdrendernode'
+      'famdfader'
+      'famvtimer'
+      'famvgenericsync'
+      'famvmousesync'
+      'famvtouchsync'
+      'famvscrollsync'
+      'famgenericsync'
+      'famnsurface'
+      'famnview'
+      'famnimagesurface'
+      'famninputsurface'
+      'famnstatemodifier'
+      'famnhflay'
+      'famngridlay'
+      'famnflexlay'
+      'famnseqlay'
+      'famndeck'
+      'famnflipper'
+      'famnedgeswapper'
+      'famnscrollview'
+      'famnrendernode'
+      'famtinterval'
+      'famttimeout'
+      'famtevery'
+      'famtafter'
+      'famuafter'
+      'famuloadurl'
+      'famufragfromhtml'
+      'famuclone'
+      'famrootnode'
+      'famkeycodes'
+      'famtransition'
+      'fameswipe'
+      'famboilerplate'
      ]

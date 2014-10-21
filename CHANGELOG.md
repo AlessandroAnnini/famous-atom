@@ -1,4 +1,14 @@
-### Prepare 3.0.1 release (HEAD, master)
+### Bugfix (HEAD, master)
+>Tue, 21 Oct 2014 22:24:49 +0200
+
+>Author: Alessandro (sunrising@Alessandros-MBP.fritz.box)
+
+>Commiter: Alessandro (sunrising@Alessandros-MBP.fritz.box)
+
+
+
+
+### Prepare 3.0.1 release (tag: v3.0.1, origin/master, origin/HEAD)
 >Tue, 21 Oct 2014 22:04:06 +0200
 
 >Author: Alessandro (sunrising@Alessandros-MBP.fritz.box)
@@ -8,7 +18,7 @@
 
 
 
-### bugfix (origin/master, origin/HEAD)
+### bugfix
 >Tue, 21 Oct 2014 22:03:00 +0200
 
 >Author: Alessandro (sunrising@Alessandros-MBP.fritz.box)
