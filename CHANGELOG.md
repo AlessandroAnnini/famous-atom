@@ -1,4 +1,14 @@
-### Update for famo.us 0.3 [part one] (HEAD, master)
+### Prepare 3.0.0 release (HEAD, master)
+>Tue, 21 Oct 2014 19:53:27 +0200
+
+>Author: Alessandro (sunrising@Alessandros-MBP.fritz.box)
+
+>Commiter: Alessandro (sunrising@Alessandros-MBP.fritz.box)
+
+
+
+
+### Update for famo.us 0.3 [part one] (origin/master, origin/HEAD)
 >Tue, 21 Oct 2014 19:51:03 +0200
 
 >Author: Alessandro (sunrising@Alessandros-MBP.fritz.box)
@@ -28,7 +38,7 @@ Modifier (famnmodifier)
 
 
 
-### Prepare 2.6.0 release (tag: v2.6.0, origin/master, origin/HEAD)
+### Prepare 2.6.0 release (tag: v2.6.0)
 >Mon, 6 Oct 2014 09:38:29 +0200
 
 >Author: Alessandro (sunrising@Alessandros-MacBook-Pro.local)
