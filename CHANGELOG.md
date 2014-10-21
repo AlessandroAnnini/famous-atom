@@ -1,4 +1,34 @@
-### Prepare 2.6.0 release (HEAD, master)
+### Update for famo.us 0.3 [part one] (HEAD, master)
+>Tue, 21 Oct 2014 19:51:03 +0200
+
+>Author: Alessandro (sunrising@Alessandros-MBP.fritz.box)
+
+>Commiter: Alessandro (sunrising@Alessandros-MBP.fritz.box)
+
+NEW FEATURES
+- Modifier proportion (famo.us 0.3)
+- Utility.clone (famo.us 0.3)
+- Utility.after
+- Utility.loadURL
+- Utility.createDocumentFragmentFromHTML
+- RenderController
+- Fader
+- Scrollview
+- EdgeSwapper
+
+CHANGES
+- dependency snippets are called with fam[d]<name> , NOT fam[v]<name>
+anymore
+- Layout snippets are now changed and much more complete
+- Timer snippets are now fam[t]<name> (’t’ added)
+- Autocomplete Easing
+
+FIX
+Modifier (famnmodifier)
+
+
+
+### Prepare 2.6.0 release (tag: v2.6.0, origin/master, origin/HEAD)
 >Mon, 6 Oct 2014 09:38:29 +0200
 
 >Author: Alessandro (sunrising@Alessandros-MacBook-Pro.local)
@@ -18,7 +48,7 @@
 
 
 
-### Bugfix (origin/master, origin/HEAD)
+### Bugfix
 >Mon, 6 Oct 2014 09:37:59 +0200
 
 >Author: Alessandro (sunrising@Alessandros-MacBook-Pro.local)

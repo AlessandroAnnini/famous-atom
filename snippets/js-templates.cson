@@ -1,69 +1,87 @@
 ".source.js":
   "load Engine":
-    "prefix": "famvengine"
+    "prefix": "famdengine"
     "body": "var Engine = require('famous/core/Engine');"
   "load View":
-    "prefix": "famvview"
+    "prefix": "famdview"
     "body": "var View = require('famous/core/View');"
   "load Surface":
-    "prefix": "famvsurface"
+    "prefix": "famdsurface"
     "body": "var Surface = require('famous/core/Surface');"
   "load ImageSurface":
-    "prefix": "famvimagesurface"
+    "prefix": "famdimagesurface"
     "body": "var ImageSurface = require('famous/surfaces/ImageSurface');"
   "load InputSurface":
-    "prefix": "famvinputsurface"
+    "prefix": "famdinputsurface"
     "body": "var InputSurface = require('famous/surfaces/InputSurface');"
   "load StateModifier":
-    "prefix": "famvstatemodifier"
+    "prefix": "famdstatemodifier"
     "body": "var StateModifier = require('famous/modifiers/StateModifier');"
   "load Modifier":
-    "prefix": "famvmodifier"
+    "prefix": "famdmodifier"
     "body": "var Modifier = require('famous/core/Modifier');"
   "load Scene":
-    "prefix": "famvscene"
+    "prefix": "famdscene"
     "body": "var Scene = require('famous/core/Scene');"
   "load RenderNode":
-    "prefix": "famvrendernode"
+    "prefix": "famdrendernode"
     "body": "var RenderNode = require('famous/core/RenderNode');"
   "load Transform":
-    "prefix": "famvtransform"
+    "prefix": "famdtransform"
     "body": "var Transform = require('famous/core/Transform');"
   "load Transitionable":
-    "prefix": "famvtransitionable"
+    "prefix": "famdtransitionable"
     "body": "var Transitionable = require('famous/transitions/Transitionable');"
   "load HeaderFooterLayout":
-    "prefix": "famvhflay"
+    "prefix": "famdhflay"
     "body": "var HeaderFooterLayout = require('famous/views/HeaderFooterLayout');"
   "load GridLayout":
-    "prefix": "famvgridlay"
+    "prefix": "famdgridlay"
     "body": "var GridLayout = require('famous/views/GridLayout');"
   "load FlexibleLayout":
-    "prefix": "famvflexlay"
+    "prefix": "famdflexlay"
     "body": "var FlexibleLayout = require('famous/views/FlexibleLayout');"
   "load SequentialLayout":
-    "prefix": "famvseqlay"
+    "prefix": "famdseqlay"
     "body": "var SequentialLayout = require('famous/views/SequentialLayout');"
-  "load Flipper":
-    "prefix": "famvflipper"
-    "body": "var Flipper = require('famous/views/Flipper');"
+  "load Scrollview":
+    "prefix": "famdscrollview"
+    "body": "var Scrollview = require('famous/views/Scrollview');"
+  "load EdgeSwapper":
+    "prefix": "famdedgeswapper"
+    "body": "var EdgeSwapper = require("famous/views/EdgeSwapper");"
   "load Deck":
-    "prefix": "famvdeck"
+    "prefix": "famddeck"
     "body": "var Deck = require('famous/views/Deck');"
+  "load Flipper":
+    "prefix": "famdflipper"
+    "body": "var Flipper = require('famous/views/Flipper');"
+  "load RenderController":
+    "prefix": "famdrendercontroller"
+    "body": "var RenderController = require("famous/views/RenderController");"
+  "load RenderNode":
+    "prefix": "famdrendernode"
+    "body": "var RenderNode = require('famous/core/RenderNode');"
+  "load Fader":
+    "prefix": "famdfader"
+    "body": "var Fader = require('famous/modifiers/Fader');"
   "load Timer":
-    "prefix": "famvtimer"
+    "prefix": "famdtimer"
     "body": "var Timer = require('famous/utilities/Timer');"
+  "load Utility":
+    "prefix": "famodutility"
+    "body": "var Utility = require('famous/utilities/Utility');"
   "load GenericSync":
-    "prefix": "famvgenericsync"
+    "prefix": "famdgenericsync"
     "body": "var GenericSync = require('famous/inputs/GenericSync');"
   "load MouseSync":
-    "prefix": "famvmousesync"
+    "prefix": "famdmousesync"
     "body": "var MouseSync = require('famous/inputs/MouseSync');"
   "load TouchSync":
-    "prefix": "famvtouchsync"
+    "prefix": "famdtouchsync"
     "body": "var TouchSync = require('famous/inputs/TouchSync');"
   "load ScrollSync":
-    "prefix": "famvscrollsync"
+    "prefix": "famdscrollsync"
     "body": "var ScrollSync = require('famous/inputs/ScrollSync');"
   "new GenericSync":
     "prefix": "famgenericsync"
@@ -78,12 +96,11 @@
     "prefix": "famnview"
     "body": """
     define(function(require, exports, module) {
-    	var View = require('famous/core/View');
-    	var Engine = require('famous/core/Engine');
-        var Surface = require('famous/core/Surface');
-        var Transform = require('famous/core/Transform');
-        var RenderNode = require('famous/core/RenderNode');
-    	var StateModifier = require('famous/modifiers/StateModifier');
+        var View          = require('famous/core/View');
+        var Surface       = require('famous/core/Surface');
+        var Transform     = require('famous/core/Transform');
+        var RenderNode    = require('famous/core/RenderNode');
+        var StateModifier = require('famous/modifiers/StateModifier');
 
         $1.prototype = Object.create(View.prototype);
         $1.prototype.constructor = $1;
@@ -95,11 +112,7 @@
         function $1(options) {
             View.apply(this, arguments);
 
-            this._node = new RenderNode();
-            this._node.add(new StateModifier()).add(new Surface());
 
-            // -- ADD TO RENDER TREE
-            this._add(this.nodeRoot);
         }
 
         module.exports = $1;
@@ -140,15 +153,27 @@
     "prefix": "famnstatemodifier"
     "body": """
         var $1 = new StateModifier({
-          align: [0, 0],
-          origin: [0, 0],
-          transform: Transform.translate(0, 0, 0)
+            align: [0, 0],
+            origin: [0, 0],
+            transform: Transform.translate(0, 0, 0)
+        });
+    """
+  "new Modifier":
+    "prefix": "famnmodifier"
+    "body": """
+        var $1 = new Modifier({
+            // proportions: [.5, .25],
+            align: [0, 0],
+            origin: [0, 0],
+            transform: Transform.translate(0, 0, 0)
         });
     """
   "new Header Footer Layout":
     "prefix": "famnhflay"
     "body": """
-        /* NEEDS EDITING */
+        /**
+         *  Header Footer Layout
+         */
         var $1 = new HeaderFooterLayout({
             headerSize: $2,
             footerSize: $3
@@ -158,115 +183,424 @@
         $1.content.add();
         $1.footer.add();
 
-        //mainContext.add($1);
+        this.add($1);
     """
   "new Grid Layout":
     "prefix": "famngridlay"
     "body": """
-        /* NEEDS EDITING */
+        /**
+         *  Grid Layout
+         */
         var $1 = new GridLayout({
           dimensions: [$2, $3]
         });
 
         var surfaces = [];
-        // surfaces.push(new Surface());
+
         $1.sequenceFrom(surfaces);
 
-        //mainContext.add($1);
+        for(var i = 0; i < 8; i++) {
+            var surf = new Surface({
+                content: "panel " + (i + 1),
+                size: [undefined, undefined],
+                properties: {
+                    backgroundColor: "hsl(" + (i * 360 / 8) + ", 100%, 50%)",
+                    color: "#404040",
+                    lineHeight: '200px',
+                    textAlign: 'center'
+                }
+            });
+            surfaces.push(surf)
+        }
+
+        this.add($1);
     """
   "new Flexible Layout":
     "prefix": "famnflexlay"
     "body": """
-        /* NEEDS EDITING */
+        /**
+         *  Flexible Layout
+         */
+        var elements = ['1', '2', '3'];
+
         var ratios = [1, 3, 5];
         var $1 = new FlexibleLayout({
             ratios: ratios
         });
 
         var surfaces = [];
-        // surfaces.push(new Surface());
+
+        for (var i = 0; i < elements.length; i++) {
+            var surf = new Surface({
+                size: [undefined, undefined],
+                content: elements[i],
+                properties: {
+                    backgroundColor: "hsl(" + (i * 360 / elements.length) + ", 100%, 50%)"
+                }
+            });
+
+            surfaces.push(surf);
+        }
+
         $1.sequenceFrom(surfaces);
 
-        //mainContext.add($1);
+        this.add($1);
     """
   "new Sequential Layout":
     "prefix": "famnseqlay"
     "body": """
-        /* NEEDS EDITING */
+        /**
+         *  Sequential Layout
+         */
+        var elements = ['1', '2', '3', '4'];
+
         var $1 = new SequentialLayout({
             direction: 0
         });
+
         var surfaces = [];
         $1.sequenceFrom(surfaces);
-        // surfaces.push(new Surface());
-        // mainContext.add($1);
+
+        for (var i = 0; i < elements.length; i++) {
+            var surf = new Surface({
+                size: [undefined, 50],
+                content: elements[i],
+                properties: {
+                    backgroundColor: "hsl(" + (i * 360 / elements.length) + ", 100%, 50%)",
+                }
+            });
+
+            surfaces.push(surf);
+        }
+
+        this.add($1);
+    """
+  "new Scrollview":
+    "prefix": "famnscrollview"
+    "body": """
+        /**
+         *  Scrollview
+         */
+        var elements = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
+
+        var $1 = new Scrollview();
+        var surfaces = [];
+
+        $1.sequenceFrom(surfaces);
+
+        for (var i = 0; i < elements.length; i++) {
+            var surf = new Surface({
+                content: "Surface: " + elements[i],
+                size: [undefined, 200],
+                properties: {
+                    backgroundColor: "hsl(" + (i * 360 / elements.length) + ", 100%, 50%)",
+                    lineHeight: "200px",
+                    textAlign: "center"
+                }
+            });
+
+            temp.pipe($1);
+            surfaces.push(temp);
+        }
+
+        this.add($1);
+    """
+  "new EdgeSwapper":
+    "prefix": "famnedgeswapper"
+    "body": """
+        /**
+         *  EdgeSwapper
+         */
+        var elements = ['1', '2', '3', '4'];
+
+        var $1 = new EdgeSwapper();
+
+        var surfaces = [];
+        var counter = 0;
+
+        for(var i = 0; i < elements.length; i++) {
+            var surf = new Surface({
+                size: [undefined, undefined],
+                content: elements[i],
+                properties: {
+                    color: 'black',
+                    fontSize: '30px',
+                    textAlign: 'center',
+                    backgroundColor: "hsl(" + (i * 360 / elements.length) + ", 100%, 50%)",
+                    lineHeight: window.innerHeight + "px",
+                    textAlign: "center"
+                }
+            });
+
+            surf.on('click', function() {
+                counter = counter == surfaces.length - 1 ? 0 : counter + 1;
+                $1.show(surfaces[counter]);
+            });
+
+            surfaces.push(surf);
+        }
+
+        this.add($1); 
+
+        $1.show(surfaces[counter]);
     """
   "new Deck":
     "prefix": "famndeck"
     "body": """
-        /* NEEDS EDITING */
-        var $1 = new Deck({
-			itemSpacing: 10,
-			transition: {
-				method: 'spring',
-				period: 300,
-				dampingRatio: 0.5
-			},
-			stackRotation: 0.02
-		});
+        /**
+         * Deck
+         */
+        var elements = ['1', '2', '3', '4'];
+
         var surfaces = [];
+
+        var $1 = new Deck({
+            itemSpacing: 10,
+            transition: {
+                method: 'spring',
+                period: 300,
+                dampingRatio: 0.5
+            },
+            stackRotation: 0.02,
+            direction: 0
+        });
+
         $1.sequenceFrom(surfaces);
-        // surfaces.push(new Surface());
-        // mainContext.add($1);
+
+        for(var i = 0; i < elements.length; i++) {
+            var surf = new Surface({
+                size: [100, 200],
+                classes: ['test'],
+                properties: {
+                    backgroundColor: 'hsla(' + ((i*elements.length + i)*15 % 360) + ', 60%, 50%, 0.8)'
+                },
+                content: elements[i]
+            });
+
+            surf.on('click', function() {
+                $1.toggle();
+            });
+            surfaces.push(surf);
+        }
+
+        this.add($1);
     """
   "new Flipper":
     "prefix": "famnflipper"
     "body": """
+        /**
+         *  Flipper
+         */
+        // mainContext.setPerspective(500);
+
         var $1 = new Flipper();
-		$1.setFront(new Surface());
-		$1.setBack(new Surface());
-        // mainContext.add($1);
+
+        var frontSurface = new Surface({
+            size : [200, 200],
+            content : 'front',
+            properties : {
+                background : 'red',
+                lineHeight : '200px',
+                textAlign  : 'center'
+            }
+        });
+
+        var backSurface = new Surface({
+            size : [200, 200],
+            content : 'back',
+            properties : {
+                background : 'blue',
+                color : 'white',
+                lineHeight : '200px',
+                textAlign  : 'center'
+                }
+        });
+
+        $1.setFront(backSurface);
+        $1.setBack(new Surface());
+
+        this.add($1);
+    """
+  "new RenderController":
+    "prefix": "famnrendercontroller"
+    "body": """
+        /**
+        *  RenderController
+        */
+        var elements = ['1', '2', '3', '4'];
+
+        var $1 = new RenderController();
+
+        var surfaces = [];
+        var counter = 0;
+
+        for (var i = 0; i < elements.length; i++) {
+            var surf = new Surface({
+                content: "Surface: " + elements[i],
+                size: [200, 200],
+                properties: {
+                    backgroundColor: "hsl(" + (i * 360 / elements.length) + ", 100%, 50%)",
+                    lineHeight: "200px",
+                    textAlign: 'center'
+                }
+            });
+
+            surf.on('click', function() {
+                counter = counter == surfaces.length - 1 ? 0 : counter + 1;
+                $1.show(surfaces[counter]);
+            });
+
+            surfaces.push(surf);
+        }
+
+        $1.show(surfaces[counter);
+
+        this.add($1);
+    """
+  "new Fader":
+    "prefix": "famnfader"
+    "body": """
+        /**
+         *  Fader
+         */
+        var $1 = new Fader();
+        $1.hide();
+
+        var surf = new Surface({
+            size : [200, 200],
+            content : 'back',
+            properties : {
+                background : 'blue',
+                color : 'white',
+                lineHeight : '200px',
+                textAlign  : 'center'
+            }
+        });
+
+        var surfMod = new StateModifier();
+
+        this.add(surfMod).add($1).add(surf);
+
+        // $1.show();
     """
   "new RenderNode":
-    "prefix": "famnrendernode"
+    "prefix": "famrendernode"
     "body": """
-        /* NEEDS EDITING */
-        // var surf = new Surface();
-        // var mod = new StateModifier();
+        /**
+         *  Create the render node and add elements
+         */
+        this.renderNode = new RenderNode();
+        this.renderNode.add(new StateModifier()).add(new Surface());
 
-        var $1 = new RenderNode(mod);
-        $1.add(surf);
-
-        // $1.add(mod).add(surf);
-        // mainContext.add($1);
+        /**
+         *  Add my node to the render tree
+         */
+        this.add(this.nodeRoot);
     """
   "Timer setInterval":
-    "prefix": "faminterval"
+    "prefix": "famtinterval"
     "body": """
         Timer.setInterval(function() {
 
         }, $1);
     """
   "Timer setTimeout":
-    "prefix": "famtimeout"
+    "prefix": "famttimeout"
     "body": """
         Timer.setTimeout(function() {
 
         }, $1);
     """
   "Timer every":
-    "prefix": "famevery"
+    "prefix": "famtevery"
     "body": """
         Timer.every(function() {
 
         }, $1);
     """
   "Timer after":
-    "prefix": "famafter"
+    "prefix": "famtafter"
     "body": """
         Timer.after(function() {
 
         }, $1);
+    """
+  "Utility after":
+    "prefix": "famuafter"
+    "body": """
+        /**
+         *  After
+         *
+         *  After is a utility that will run a particular callback
+         *  once the returned function is called a set number of
+         *  times.
+         *
+         *  In the example, the callback is run after the 5th click.
+         */
+
+        var fn = Utility.after(5, function() {
+            alert('Was called on 5th try');
+        });
+
+        Engine.on('click', fn);
+    """
+  "Utility loadURL":
+    "prefix": "famuloadurl"
+    "body": """
+        /**
+         *  LoadURL
+         *  Load a URL and return its contents in a callback
+         */
+
+        function myCallback(text) {
+            console.log(text);
+        }
+
+        Utility.loadURL('http://$1', myCallback(text));
+    """
+  "Utility createDocumentFragmentFromHTML":
+    "prefix": "famufragfromhtml"
+    "body": """
+        /**
+         *  CreateDocumentFragmentFromHTML
+         *  Create a document fragment from a string of HTML
+         */
+
+        // input a HTML string
+        var documentFragment = Utility.createDocumentFragmentFromHTML($1);
+    """
+  "Utility clone":
+    "prefix": "famuclone"
+    "body": """
+        /**
+         *  Clone
+         *  Utility.createDocumentFragmentFromHTML
+         */
+
+        // input an object
+        var clonedObject = Utility.clone($1);
+    """
+  "RootNode":
+    "prefix": "famrootnode"
+    "body": """
+        /**
+         *  Create the root node with its modifier
+         */
+        this.rootModifier = new StateModifier({
+            size: this.options.size,
+            align: this.options.align,
+            origin: this.options.origin
+        });
+        this.rootNode = this.add(this.rootModifier);
+
+        /**
+         *  Create my page elements
+         */
+
+        /**
+         *  Add the elements to the root node
+         */
+        this.rootNode.add(new Surface({}));
     """
   "Keycodes":
     "prefix": "famkeycodes"
