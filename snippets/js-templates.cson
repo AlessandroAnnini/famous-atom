@@ -49,7 +49,7 @@
     "body": "var Scrollview = require('famous/views/Scrollview');"
   "load EdgeSwapper":
     "prefix": "famdedgeswapper"
-    "body": "var EdgeSwapper = require("famous/views/EdgeSwapper");"
+    "body": "var EdgeSwapper = require('famous/views/EdgeSwapper');"
   "load Deck":
     "prefix": "famddeck"
     "body": "var Deck = require('famous/views/Deck');"
@@ -58,7 +58,7 @@
     "body": "var Flipper = require('famous/views/Flipper');"
   "load RenderController":
     "prefix": "famdrendercontroller"
-    "body": "var RenderController = require("famous/views/RenderController");"
+    "body": "var RenderController = require('famous/views/RenderController');"
   "load RenderNode":
     "prefix": "famdrendernode"
     "body": "var RenderNode = require('famous/core/RenderNode');"
@@ -340,7 +340,7 @@
             surfaces.push(surf);
         }
 
-        this.add($1); 
+        this.add($1);
 
         $1.show(surfaces[counter]);
     """

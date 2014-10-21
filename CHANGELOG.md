@@ -1,4 +1,14 @@
-### Prepare 3.0.0 release (HEAD, master)
+### bugfix (HEAD, master)
+>Tue, 21 Oct 2014 22:03:00 +0200
+
+>Author: Alessandro (sunrising@Alessandros-MBP.fritz.box)
+
+>Commiter: Alessandro (sunrising@Alessandros-MBP.fritz.box)
+
+
+
+
+### Prepare 3.0.0 release (tag: v3.0.0, origin/master, origin/HEAD)
 >Tue, 21 Oct 2014 19:53:27 +0200
 
 >Author: Alessandro (sunrising@Alessandros-MBP.fritz.box)
@@ -8,7 +18,7 @@
 
 
 
-### Update for famo.us 0.3 [part one] (origin/master, origin/HEAD)
+### Update for famo.us 0.3 [part one]
 >Tue, 21 Oct 2014 19:51:03 +0200
 
 >Author: Alessandro (sunrising@Alessandros-MBP.fritz.box)
