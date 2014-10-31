@@ -1,4 +1,14 @@
-### Update (HEAD, master)
+### Prepare 3.1.0 release (HEAD, master)
+>Fri, 31 Oct 2014 18:44:38 +0100
+
+>Author: Alessandro (sunrising@Alessandros-MacBook-Pro.local)
+
+>Commiter: Alessandro (sunrising@Alessandros-MacBook-Pro.local)
+
+
+
+
+### Update (origin/master, origin/HEAD)
 >Fri, 31 Oct 2014 18:43:09 +0100
 
 >Author: Alessandro (sunrising@Alessandros-MacBook-Pro.local)
@@ -19,7 +29,7 @@ FIX
 
 
 
-### Prepare 3.0.2 release (tag: v3.0.2, origin/master, origin/HEAD)
+### Prepare 3.0.2 release (tag: v3.0.2)
 >Tue, 21 Oct 2014 22:24:57 +0200
 
 >Author: Alessandro (sunrising@Alessandros-MBP.fritz.box)
