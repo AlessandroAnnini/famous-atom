@@ -1,4 +1,14 @@
-### Prepare 3.2.2 release (HEAD, master)
+### fix (HEAD, master)
+>Fri, 31 Oct 2014 19:24:09 +0100
+
+>Author: Alessandro (sunrising@Alessandros-MBP.lan)
+
+>Commiter: Alessandro (sunrising@Alessandros-MBP.lan)
+
+
+
+
+### Prepare 3.2.2 release (tag: v3.2.2, origin/master, origin/HEAD)
 >Fri, 31 Oct 2014 18:50:25 +0100
 
 >Author: Alessandro (sunrising@Alessandros-MacBook-Pro.local)
@@ -18,7 +28,7 @@
 
 
 
-### fix (origin/master, origin/HEAD)
+### fix
 >Fri, 31 Oct 2014 18:50:02 +0100
 
 >Author: Alessandro (sunrising@Alessandros-MacBook-Pro.local)

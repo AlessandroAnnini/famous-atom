@@ -22,7 +22,7 @@
     "body": "var Modifier = require('famous/core/Modifier');"
   "load Easing":
     "prefix": "famdeasing"
-    "body": "var Easing = require('famous/transitions/Easing');""
+    "body": "var Easing = require('famous/transitions/Easing');"
   "load Scene":
     "prefix": "famdscene"
     "body": "var Scene = require('famous/core/Scene');"
