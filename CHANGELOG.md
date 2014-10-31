@@ -1,4 +1,14 @@
-### Prepare 3.2.1 release (HEAD, master)
+### Prepare 3.2.2 release (HEAD, master)
+>Fri, 31 Oct 2014 18:50:25 +0100
+
+>Author: Alessandro (sunrising@Alessandros-MacBook-Pro.local)
+
+>Commiter: Alessandro (sunrising@Alessandros-MacBook-Pro.local)
+
+
+
+
+### Prepare 3.2.1 release (tag: v3.2.1)
 >Fri, 31 Oct 2014 18:50:14 +0100
 
 >Author: Alessandro (sunrising@Alessandros-MacBook-Pro.local)
