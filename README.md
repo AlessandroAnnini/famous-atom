@@ -290,91 +290,97 @@ html
 
 <br> others are like:`fam + name`<br><br>
 
-##### famvengine
+##### famdengine
 
 ```
 var Engine = require('famous/core/Engine');
 ```
 
-##### famview
+##### famdview
 
 ```
 var View = require("famous/core/View");
 ```
 
-##### famvsurface
+##### famdsurface
 
 ```
 var Surface = require('famous/core/Surface');
 ```
 
-##### famvimagesurface
+##### famdimagesurface
 
 ```
 var ImageSurface = require('famous/surfaces/ImageSurface');
 ```
 
-##### famvinputsurface
+##### famdinputsurface
 
 ```
 var InputSurface = require('famous/surfaces/InputSurface');
 ```
 
-##### famvstatemodifier
+##### famdstatemodifier
 
 ```
 var StateModifier = require('famous/modifiers/StateModifier');
 ```
 
-##### famvmodifier
+##### famdmodifier
 
 ```
 var Modifier = require('famous/core/Modifier');
 ```
 
-##### famvscene
+##### famdscene
 
 ```
 var Scene = require('famous/core/Scene');
 ```
 
-##### famvrendernode
+##### famdrendernode
 
 ```
 var RenderNode = require('famous/core/RenderNode');
 ```
 
-##### famvtransform
+##### famdtransform
 
 ```
 var Transform = require('famous/core/Transform');
 ```
 
-##### famvtransitionable
+##### famdtransitionable
 
 ```
 var Transitionable = require('famous/transitions/Transitionable');
 ```
 
-##### famvhflay
+##### famdeasing
+
+```
+var Easing = require('famous/transitions/Easing');
+```
+
+##### famdhflay
 
 ```
 var HeaderFooterLayout = require('famous/views/HeaderFooterLayout');
 ```
 
-##### famvgridlay
+##### famdgridlay
 
 ```
 var GridLayout = require('famous/views/GridLayout');
 ```
 
-##### famvflexlay
+##### famdflexlay
 
 ```
 var FlexibleLayout = require('famous/views/FlexibleLayout');
 ```
 
-##### famvseqlay
+##### famdseqlay
 
 ```
 var SequentialLayout = require('famous/views/SequentialLayout');
@@ -392,13 +398,13 @@ var Scrollview = require('famous/views/Scrollview');
 var EdgeSwapper = require("famous/views/EdgeSwapper");
 ```
 
-##### famvddeck
+##### famdddeck
 
 ```
 var Deck = require('famous/views/Deck');
 ```
 
-##### famvflipper
+##### famdflipper
 
 ```
 var Flipper = require('famous/views/Flipper');
@@ -422,36 +428,36 @@ var RenderNode = require('famous/core/RenderNode');
 var Fader = require('famous/modifiers/Fader');
 ```
 
-#### famvtimer
+#### famdtimer
 ```
 var Timer = require('famous/utilities/Timer');
 ```
 
-##### famodutility
+##### famdutility
 
 ```
 var Utility = require('famous/utilities/Utility');
 ```
 
-##### famvgenericsync
+##### famdgenericsync
 
 ```
 var GenericSync = require('famous/inputs/GenericSync');
 ```
 
-##### famvmousesync
+##### famdmousesync
 
 ```
 var MouseSync = require('famous/inputs/MouseSync');
 ```
 
-##### famvtouchsync
+##### famdtouchsync
 
 ```
 var TouchSync = require('famous/inputs/TouchSync');
 ```
 
-##### famvscrollsync
+##### famdscrollsync
 
 ```
 var ScrollSync = require('famous/inputs/ScrollSync');
@@ -780,13 +786,14 @@ var backSurface = new Surface({
         color : 'white',
         lineHeight : '200px',
         textAlign  : 'center'
-        }
+    }
 });
 
-$1.setFront(backSurface);
-$1.setBack(new Surface());
+$1.setFront(frontSurface);
+$1.setBack(backSurface);
 
 this.add($1);
+// this.$1.flip();
 ```
 
 ##### famnrendercontroller
@@ -859,7 +866,7 @@ this.renderNode.add(new StateModifier()).add(new Surface());
 /**
  *  Add my node to the render tree
  */
-this.add(this.nodeRoot);
+this.add(this.renderNode);
 ```
 
 ##### famtinterval
@@ -1037,34 +1044,38 @@ AppView.prototype.slideRight = function() {
 
 ```
 define(function(require, exports, module) {
-	// import dependencies
-	var Engine = require('famous/core/Engine');
-	var Modifier = require('famous/core/Modifier');
-	var Transform = require('famous/core/Transform');
-	var ImageSurface = require('famous/surfaces/ImageSurface');
+    // import dependencies
+    var Engine = require('famous/core/Engine');
+    var Modifier = require('famous/core/Modifier');
+    var Transform = require('famous/core/Transform');
+    var ImageSurface = require('famous/surfaces/ImageSurface');
 
-	// create the main context
-	var mainContext = Engine.createContext();
+    // create the main context
+    var mainContext = Engine.createContext();
 
-	// your app here
-	var logo = new ImageSurface({
-		size: [200, 200],
-		content: 'http://code.famo.us/assets/famous_logo.svg',
-		//classes: ['double-sided']
-		properties: {
-			'-webkit-backface-visibility': 'visible',
-			'backface-visibility': 'visible'
-		}
-	});
+    // your app here
+    var logo = new ImageSurface({
+        size: [200, 200],
+        content: 'http://code.famo.us/assets/famous_logo.svg',
+        //classes: ['double-sided']
+        properties: {
+            '-webkit-backface-visibility': 'visible',
+            'backface-visibility': 'visible'
+        }
+    });
 
-	var initialTime = Date.now();
-	var centerSpinModifier = new Modifier({
-		origin: [0.5, 0.5],
-		transform : function(){
-			return Transform.rotateY(.002 * (Date.now() - initialTime));
-		}
-	});
+    var initialTime = Date.now();
+    var centerSpinModifier = new Modifier({
+        origin: [0.5, 0.5],
+        transform : function(){
+            return Transform.rotateY(.002 * (Date.now() - initialTime));
+        }
+    });
 
-	mainContext.add(centerSpinModifier).add(logo);
+    mainContext.add(centerSpinModifier).add(logo);
 });
 ```
+
+## LICENSE
+
+The MIT License (MIT)

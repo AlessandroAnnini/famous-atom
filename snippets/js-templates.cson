@@ -20,6 +20,9 @@
   "load Modifier":
     "prefix": "famdmodifier"
     "body": "var Modifier = require('famous/core/Modifier');"
+  "load Easing":
+    "prefix": "famdeasing"
+    var Easing = require('famous/transitions/Easing');
   "load Scene":
     "prefix": "famdscene"
     "body": "var Scene = require('famous/core/Scene');"
@@ -96,10 +99,11 @@
     "prefix": "famnview"
     "body": """
     define(function(require, exports, module) {
-        var View          = require('famous/core/View');
-        var Surface       = require('famous/core/Surface');
-        var Transform     = require('famous/core/Transform');
-        var RenderNode    = require('famous/core/RenderNode');
+        var View = require('famous/core/View');
+        var Engine = require('famous/core/Engine');
+        var Surface = require('famous/core/Surface');
+        var Transform = require('famous/core/Transform');
+        var RenderNode = require('famous/core/RenderNode');
         var StateModifier = require('famous/modifiers/StateModifier');
 
         $1.prototype = Object.create(View.prototype);
@@ -113,6 +117,9 @@
             View.apply(this, arguments);
 
 
+
+
+            //this.add(yourstuff);
         }
 
         module.exports = $1;
@@ -121,7 +128,7 @@
   "new Surface":
     "prefix": "famnsurface"
     "body": """
-        var $1 = new Surface({
+        $1 = new Surface({
             size: [undefined, undefined],
             content: '',
             classes: [],
@@ -135,7 +142,7 @@
   "new ImageSurface":
     "prefix": "famnimagesurface"
     "body": """
-        var $1 = new ImageSurface({
+        $1 = new ImageSurface({
             size: [true, true],
             content: '/*url*/'
         });
@@ -143,7 +150,7 @@
   "new InputSurface":
     "prefix": "famninputsurface"
     "body": """
-        var $1 = new InputSurface({
+        $1 = new InputSurface({
             size: [200, 100],
             placeholder: '',
             type: 'text' // or 'button'
@@ -152,7 +159,7 @@
   "new StateModifier":
     "prefix": "famnstatemodifier"
     "body": """
-        var $1 = new StateModifier({
+        $1 = new StateModifier({
             align: [0, 0],
             origin: [0, 0],
             transform: Transform.translate(0, 0, 0)
@@ -161,7 +168,7 @@
   "new Modifier":
     "prefix": "famnmodifier"
     "body": """
-        var $1 = new Modifier({
+        $1 = new Modifier({
             // proportions: [.5, .25],
             align: [0, 0],
             origin: [0, 0],
@@ -174,7 +181,7 @@
         /**
          *  Header Footer Layout
          */
-        var $1 = new HeaderFooterLayout({
+        $1 = new HeaderFooterLayout({
             headerSize: $2,
             footerSize: $3
         });
@@ -191,11 +198,11 @@
         /**
          *  Grid Layout
          */
-        var $1 = new GridLayout({
+        $1 = new GridLayout({
           dimensions: [$2, $3]
         });
 
-        var surfaces = [];
+        this.surfaces = [];
 
         $1.sequenceFrom(surfaces);
 
@@ -210,7 +217,7 @@
                     textAlign: 'center'
                 }
             });
-            surfaces.push(surf)
+            this.surfaces.push(surf)
         }
 
         this.add($1);
@@ -221,7 +228,7 @@
         /**
          *  Flexible Layout
          */
-        var elements = ['1', '2', '3'];
+        this.elements = ['1', '2', '.3'];
 
         var ratios = [1, 3, 5];
         var $1 = new FlexibleLayout({
@@ -230,19 +237,19 @@
 
         var surfaces = [];
 
-        for (var i = 0; i < elements.length; i++) {
+        for (var i = 0; i < this.elements.length; i++) {
             var surf = new Surface({
                 size: [undefined, undefined],
-                content: elements[i],
+                content: this.elements[i],
                 properties: {
-                    backgroundColor: "hsl(" + (i * 360 / elements.length) + ", 100%, 50%)"
+                    backgroundColor: "hsl(" + (i * 360 / this.elements.length) + ", 100%, 50%)"
                 }
             });
 
-            surfaces.push(surf);
+            this.surfaces.push(surf);
         }
 
-        $1.sequenceFrom(surfaces);
+        $1.sequenceFrom(this.surfaces);
 
         this.add($1);
     """
@@ -252,25 +259,25 @@
         /**
          *  Sequential Layout
          */
-        var elements = ['1', '2', '3', '4'];
+        this.elements = ['1', '2', '3', '4'];
 
-        var $1 = new SequentialLayout({
+        this.$1 = new SequentialLayout({
             direction: 0
         });
 
-        var surfaces = [];
-        $1.sequenceFrom(surfaces);
+        this.surfaces = [];
+        this.sequenceFrom(surfaces);
 
-        for (var i = 0; i < elements.length; i++) {
+        for (var i = 0; i < this.elements.length; i++) {
             var surf = new Surface({
                 size: [undefined, 50],
-                content: elements[i],
+                content: this.elements[i],
                 properties: {
-                    backgroundColor: "hsl(" + (i * 360 / elements.length) + ", 100%, 50%)",
+                    backgroundColor: "hsl(" + (i * 360 / this.elements.length) + ", 100%, 50%)",
                 }
             });
 
-            surfaces.push(surf);
+            this.surfaces.push(surf);
         }
 
         this.add($1);
@@ -281,26 +288,26 @@
         /**
          *  Scrollview
          */
-        var elements = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
+        this.elements = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
 
-        var $1 = new Scrollview();
-        var surfaces = [];
+        $1 = new Scrollview();
+        this.surfaces = [];
 
-        $1.sequenceFrom(surfaces);
+        $1.sequenceFrom(this.surfaces);
 
-        for (var i = 0; i < elements.length; i++) {
+        for (var i = 0; i < this.elements.length; i++) {
             var surf = new Surface({
-                content: "Surface: " + elements[i],
+                content: "Surface: " + this.elements[i],
                 size: [undefined, 200],
                 properties: {
-                    backgroundColor: "hsl(" + (i * 360 / elements.length) + ", 100%, 50%)",
+                    backgroundColor: "hsl(" + (i * 360 / this.elements.length) + ", 100%, 50%)",
                     lineHeight: "200px",
                     textAlign: "center"
                 }
             });
 
-            temp.pipe($1);
-            surfaces.push(temp);
+            surf.pipe($1);
+            this.surfaces.push(surf);
         }
 
         this.add($1);
@@ -311,38 +318,38 @@
         /**
          *  EdgeSwapper
          */
-        var elements = ['1', '2', '3', '4'];
+        this.elements = ['1', '2', '3', '4'];
 
-        var $1 = new EdgeSwapper();
+        $1 = new EdgeSwapper();
 
-        var surfaces = [];
-        var counter = 0;
+        this.surfaces = [];
+        this.counter = 0;
 
-        for(var i = 0; i < elements.length; i++) {
+        for(var i = 0; i < this.elements.length; i++) {
             var surf = new Surface({
                 size: [undefined, undefined],
-                content: elements[i],
+                content: this.elements[i],
                 properties: {
                     color: 'black',
                     fontSize: '30px',
                     textAlign: 'center',
-                    backgroundColor: "hsl(" + (i * 360 / elements.length) + ", 100%, 50%)",
+                    backgroundColor: "hsl(" + (i * 360 / this.elements.length) + ", 100%, 50%)",
                     lineHeight: window.innerHeight + "px",
                     textAlign: "center"
                 }
             });
 
             surf.on('click', function() {
-                counter = counter == surfaces.length - 1 ? 0 : counter + 1;
-                $1.show(surfaces[counter]);
+                this.counter = this.counter == surfaces.length - 1 ? 0 : this.counter + 1;
+                $1.show(this.surfaces[this.counter]);
             });
 
-            surfaces.push(surf);
+            this.surfaces.push(surf);
         }
 
         this.add($1);
 
-        $1.show(surfaces[counter]);
+        $1.show(this.surfaces[this.counter]);
     """
   "new Deck":
     "prefix": "famndeck"
@@ -350,9 +357,9 @@
         /**
          * Deck
          */
-        var elements = ['1', '2', '3', '4'];
+        this.elements = ['1', '2', '3', '4'];
 
-        var surfaces = [];
+        this.surfaces = [];
 
         var $1 = new Deck({
             itemSpacing: 10,
@@ -365,22 +372,22 @@
             direction: 0
         });
 
-        $1.sequenceFrom(surfaces);
+        $1.sequenceFrom(this.surfaces);
 
-        for(var i = 0; i < elements.length; i++) {
+        for(var i = 0; i < this.elements.length; i++) {
             var surf = new Surface({
                 size: [100, 200],
                 classes: ['test'],
                 properties: {
-                    backgroundColor: 'hsla(' + ((i*elements.length + i)*15 % 360) + ', 60%, 50%, 0.8)'
+                    backgroundColor: 'hsla(' + ((i * this.elements.length + i) * 15 % 360) + ', 60%, 50%, 0.8)'
                 },
-                content: elements[i]
+                content: this.elements[i]
             });
 
             surf.on('click', function() {
                 $1.toggle();
             });
-            surfaces.push(surf);
+            this.surfaces.push(surf);
         }
 
         this.add($1);
@@ -393,7 +400,7 @@
          */
         // mainContext.setPerspective(500);
 
-        var $1 = new Flipper();
+        $1 = new Flipper();
 
         var frontSurface = new Surface({
             size : [200, 200],
@@ -427,33 +434,33 @@
         /**
         *  RenderController
         */
-        var elements = ['1', '2', '3', '4'];
+        this.elements = ['1', '2', '3', '4'];
 
-        var $1 = new RenderController();
+        $1 = new RenderController();
 
-        var surfaces = [];
-        var counter = 0;
+        this.surfaces = [];
+        this.counter = 0;
 
-        for (var i = 0; i < elements.length; i++) {
+        for (var i = 0; i < this.elements.length; i++) {
             var surf = new Surface({
-                content: "Surface: " + elements[i],
+                content: "Surface: " + this.elements[i],
                 size: [200, 200],
                 properties: {
-                    backgroundColor: "hsl(" + (i * 360 / elements.length) + ", 100%, 50%)",
+                    backgroundColor: "hsl(" + (i * 360 / this.elements.length) + ", 100%, 50%)",
                     lineHeight: "200px",
                     textAlign: 'center'
                 }
             });
 
             surf.on('click', function() {
-                counter = counter == surfaces.length - 1 ? 0 : counter + 1;
-                $1.show(surfaces[counter]);
+                this.counter = this.counter == this.surfaces.length - 1 ? 0 : this.counter + 1;
+                $1.show(this.surfaces[this.counter]);
             });
 
-            surfaces.push(surf);
+            this.surfaces.push(surf);
         }
 
-        $1.show(surfaces[counter);
+        $1.show(this.surfaces[this.counter);
 
         this.add($1);
     """
@@ -463,10 +470,10 @@
         /**
          *  Fader
          */
-        var $1 = new Fader();
+        $1 = new Fader();
         $1.hide();
 
-        var surf = new Surface({
+        this.surf = new Surface({
             size : [200, 200],
             content : 'back',
             properties : {
@@ -477,9 +484,9 @@
             }
         });
 
-        var surfMod = new StateModifier();
+        this.surfMod = new StateModifier();
 
-        this.add(surfMod).add($1).add(surf);
+        this.add(this.surfMod).add($1).add(this.surf);
 
         // $1.show();
     """

@@ -1,4 +1,25 @@
-### Prepare 3.0.2 release (HEAD, master)
+### Update (HEAD, master)
+>Fri, 31 Oct 2014 18:43:09 +0100
+
+>Author: Alessandro (sunrising@Alessandros-MacBook-Pro.local)
+
+>Commiter: Alessandro (sunrising@Alessandros-MacBook-Pro.local)
+
+NEW FEATURES
+- famdeasing for Easing dependency
+
+CHANGES
+- all names are now this.name
+- views are now empty
+
+FIX
+- flipper
+- RenderNode
+- RootNode
+
+
+
+### Prepare 3.0.2 release (tag: v3.0.2, origin/master, origin/HEAD)
 >Tue, 21 Oct 2014 22:24:57 +0200
 
 >Author: Alessandro (sunrising@Alessandros-MBP.fritz.box)
@@ -8,7 +29,7 @@
 
 
 
-### Bugfix (origin/master, origin/HEAD)
+### Bugfix
 >Tue, 21 Oct 2014 22:24:49 +0200
 
 >Author: Alessandro (sunrising@Alessandros-MBP.fritz.box)
