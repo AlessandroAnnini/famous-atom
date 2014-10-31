@@ -1,4 +1,14 @@
-### Prepare 3.2.5 release (HEAD, master)
+### Prepare 3.2.6 release (HEAD, master)
+>Fri, 31 Oct 2014 19:29:24 +0100
+
+>Author: Alessandro (sunrising@Alessandros-MBP.lan)
+
+>Commiter: Alessandro (sunrising@Alessandros-MBP.lan)
+
+
+
+
+### Prepare 3.2.5 release (tag: v3.2.5)
 >Fri, 31 Oct 2014 19:29:07 +0100
 
 >Author: Alessandro (sunrising@Alessandros-MBP.lan)
