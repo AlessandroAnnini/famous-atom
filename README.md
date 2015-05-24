@@ -1,6 +1,9 @@
 Famo.us support in Atom by http://famousco.de/
 ==============================================
 
+DEPRECATED
+==========
+
 **[famo.us](http://famo.us/)** - official website
 
 **[famousco.de](http://famousco.de/)** - first unofficial Famo.us resource website
